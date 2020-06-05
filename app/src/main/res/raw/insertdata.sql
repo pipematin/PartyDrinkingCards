@@ -1550,6 +1550,14 @@ insert into cards (content,content_es,players,type)
      values ("The player that has the more chest drinks 1 sip",
      "El jugador que tenga mas pecho bebe 1 trago",0,1);
 
+  insert into cards (content,content_es,players,type)
+   values ("The player that has darker skin drinks 1 sip",
+   "El jugador que tenga la piel mas negra bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("The player that is more white drinks 1 sip",
+   "El jugador que tenga la piel mas blanca bebe 1 trago",0,1);
+
  /*-------- 1 player ------------*/;
 
  /*-------- 2 players ------------*/;
@@ -1649,6 +1657,10 @@ insert into cards (content,content_es,players,type)
   insert into cards (content,content_es,players,type)
    values ("Until a Legendary card appears you can only speak using movie quotes",
    "Hasta que aparezca una carta Legendaria solo puedes hablar usando frases de peliculas",1,3);
+
+  insert into cards (content,content_es,players,type)
+   values ("Make up the lyrics for a new reggaeton song or drink 6 sips",
+   "Inventate la letra de una cancion de reggaeton o bebe 6 tragos",1,3);
  /*-------- 2 players ------------*/;
 
  /*--------------------------------Legendarias-----------------------------------*/;
@@ -1658,6 +1670,9 @@ insert into cards (content,content_es,players,type)
   "El último en apagar su movil bebe 1 chupito",0,4);
 
  /*-------- 1 player ------------*/;
+ insert into cards (content,content_es,players,type)
+  values ("Drink 1 shot if you have ever order something in Starbucks. Fucking Hipster",
+  "Bebe 1 chupito si alguna vez has pedido algo en Starbucks. Puto Hipster.",1,4);
 
  /*-------- 2 players ------------*/;
  insert into cards (content,content_es,players,type)
@@ -1665,6 +1680,6 @@ insert into cards (content,content_es,players,type)
   "Haced un concurso de camiseta mojada o bebed un chupito",2,4);
 
   insert into cards (content,content_es,players,type)
-   values ("Do a wet t-shirt competition or drink a shot",
-   "Haced un concurso de camiseta mojada o bebed un chupito",2,4);
+   values ("Put an ice cube in your genitals. The first player to remove it drinks 1 shot. If you both hold it until it completely melts ALL the other players drink 1 shot. ",
+   "Meted un cubito de hielo en vuestros genitales. EL jugador que primero se lo quite bebe un chupito. Si los dos aguantais hasta que se derrita TODOS los demas jugadores beben un chupito.",2,4);
  /*-------- 3 players ------------*/;
