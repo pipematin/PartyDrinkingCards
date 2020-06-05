@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Party Cards</string>
+    <string name="b_ng">Jugar</string>
+    <string name="b_ngP">Partida Rápida</string>
+    <string name="b_options">Opciones</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="Sound">Sonido</string>
+    <string name="Vibration">Vibración</string>
+    <string name="Common">Común</string>
+    <string name="Rare">Rara</string>
+    <string name="Epic">Epica</string>
+    <string name="Legendary">Legendaria</string>
+    <string name="CardTypes">Tipos de Carta</string>
+    <string name="NextCard">Carta Siguiente</string>
+    <string name="WelcomeType">Aquí se mostrará el tipo</string>
+    <string name="WelcomePlayers">Aquí se mostrarán los jugadores</string>
+    <string name="WelcomeText">Bienvenidos al juego! \nAquí se mostrarán el contenido de las cartas</string>
+    <string name="CB_warning">No pudes deshabilitar TODAS las cartas tontito :)</string>
+    <string name="cardFor">Una carta para:</string>
+    <string name="cardForEveryone">Todos los jugadores</string>
+    <string name="totalCards">Tienes <b>%d</b> cartas disponibles</string>
+    <string name="b_NGPlayers">Modo Normal</string>
+    <string name="b_NGFast">Modo Rápido</string>
+    <string name="TV_NGPlayers"><b>MODO RECOMENDADO: </b>Crea tus jugadores y disfruta de todas las cartas disponibles con pruebas específicas para cada uno de vosotros</string>
+    <string name="TV_NGFast">Modo rápido donde todas las cartas se refieren a todos los jugadores sin pruebas específicas</string>
+    <string name="b_addPlayer">Añadir Jugador</string>
+    <string name="players">Jugadores</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="addPlayerText">Inserta el nombre del jugador:</string>
+    <string name="confirm">Confirmar</string>
+    <string name="addSuccess">Jugador añadido con éxito</string>
+    <string name="yourName">Tu Nombre</string>
+    <string name="playerLimit">No puedes añadir más de %d jugadores</string>
+    <string name="and">y</string>
+    <string name="limitPlayerStart">Necesitas crear al menos a un jugador</string>
+    <string name="caution">Precaución: Bebe con responsabilidad. Soy una aplicación no puedo llevarte de vuelta a casa o ayudarte con tus acciones.</string>
+    <string name="close">cerrar</string>
+    <string name="challenge">Reto</string>
+    <string name="tv_extra_explanation">Puedes desbloquear cartas nuevas totalmente GRATIS! Tan solo pulsa el botón de DESBLOQUEAR y visualiza el video. Una vez desbloqueado un pack, es tuyo para siempre.</string>
+    <string name="unlock">DESBLOQUEAR</string>
+    <string name="unlocked">Desbloqueado</string>
+    <string name="extra1_desc">PACK 1: ¡Desbloquea 50 Cartas más para aumentar la diversión!</string>
+    <string name="extra4_desc">PACK 2: ¡Desbloquea 30 Cartas más para aumentar la diversión!</string>
+    <string name="extra2_desc">¡Desbloquea 25 Cartas EXTREMAS!</string>
+    <string name="extra3_desc">¡Desbloquea 25 Cartas con pruebas PICANTES!</string>
+    <string name="disabled">Desactivado</string>
+    <string name="enabled">Activado</string>
+    <string name="free_cards">MÁS CARTAS</string>
+    <string name="extra">Extra</string>
+    <string name="tutorial_text1">Para jugar a <b>Party Cards</b> necesitarás:\n\n - Una bebida suave como Cerveza, Vino o una bebida fuerte como Vodka, Ron, Ginebra mezclados con refresco o zumo.
+        \n\n - Vasos de chupito y algún alcohol fuerte para rellenarlos.\n\n - Amigos. (opcional dependiendo del poder de tu imaginación o el pedo que lleves encima) \n\nCuando
+        <b>Party Cards</b> te diga <i>bebe un trago</i> bebe de tú vaso de bebida suave. Cuando te diga <i>bebe un chupito</i>
+        llena el vaso de chupito con alcohol fuerte y bebetelo.</string>
+    <string name="tutorial_text2">El juego consiste en robar cartas con el botón de carta siguiente. Hay cuatro tipos de cartas: Común, Rara, Épica y Legendaria. Las pruebas que aparecerán
+    en las cartas serán más difíciles dependiendo de la rareza de la carta. Diviertete viendo como tus amigos sufren las pruebas Legendarias o llora si eres tú el afortunado. Recuerda que puedes desactivar
+        los tipos de cartas que quieras y que puedes conseguir <b>más cartas gratis</b> clickando el botón de MÁS CARTAS en el menu de inicio. Bebe con responsabilidad ya que no nos hacemos responsables de cualquier consecuencia que pueda ocurrir por el uso de esta aplicación. MUCHAS GRACIAS por descargar nuestra aplicación. <b><i>¡ERES UNA PERSONA MARAVILLOSA!</i></b></string>
+    <string name="loading">Cargando&#8230;</string>
+    <string name="special_cards">Cartas Especiales</string>
+    <string name="standard_cards">Cartas Estandar</string>
+</resources>

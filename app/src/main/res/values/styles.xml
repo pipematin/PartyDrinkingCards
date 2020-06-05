@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/striderxr_logo_text_min</item>
+    </style>
+
+    <style name="textOptions" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="checkboxOptions" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="radioButtonOptions" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textGameMenu" parent="TextAppearance.AppCompat">
+        <item name="android:background">@drawable/shape_grey</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="textGameCards" parent="TextAppearance.AppCompat">
+        <item name="android:background">@drawable/card_shape</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="textGame" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="textTutorial" parent="TextAppearance.AppCompat">
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="textExtraCateg" parent="TextAppearance.AppCompat">
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/extra_extreme</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+</resources>

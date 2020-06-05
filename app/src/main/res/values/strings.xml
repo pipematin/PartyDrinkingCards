@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Party Cards</string>
+    <string name="b_ng">Play</string>
+    <string name="b_ngP">Fast Play</string>
+    <string name="b_options">Options</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Sound">Sound</string>
+    <string name="Vibration">Vibration</string>
+    <string name="Common">Common</string>
+    <string name="Rare">Rare</string>
+    <string name="Epic">Epic</string>
+    <string name="Legendary">Legendary</string>
+    <string name="CardTypes">Card Types</string>
+    <string name="NextCard">Next Card</string>
+    <string name="WelcomeType">Here we will show the type</string>
+    <string name="WelcomePlayers">Here we will show the players</string>
+    <string name="WelcomeText">Welcome to the game! \nHere we will show the card content</string>
+    <string name="CB_warning">You cannot have ALL cards disabled you silly :)</string>
+    <string name="cardFor">A card for:</string>
+    <string name="cardForEveryone">Every player</string>
+    <string name="totalCards">You have <b>%d</b> cards available</string>
+    <string name="b_NGPlayers">Normal Mode</string>
+    <string name="b_NGFast">Fast Mode</string>
+    <string name="TV_NGPlayers"><b>RECOMMENDED MODE: </b>Create your players and enjoy all the cards in the game with specific challenges for each one of you</string>
+    <string name="TV_NGFast">Fast Mode where all cards refer to all players and there are not specific challenges</string>
+    <string name="b_addPlayer">Add Player</string>
+    <string name="players">Players</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="addPlayerText">Insert the player\'s name:</string>
+    <string name="confirm">Confirm</string>
+    <string name="addSuccess">Player added</string>
+    <string name="yourName">Your Name</string>
+    <string name="playerLimit">You cannot add more than %d players</string>
+    <string name="and">and</string>
+    <string name="limitPlayerStart">You need to create at least one player</string>
+    <string name="caution">Caution: Drink with responsibility. I am an app I cannot take you back home or help you with your actions.</string>
+    <string name="close">close</string>
+    <string name="challenge">Challenge</string>
+    <string name="extra">Extra</string>
+    <string name="tv_extra_explanation">You can unlock more cards for FREE! Just press the UNLOCK button on each pack you want and watch the video. Once you unlock a pack, is yours for ever.</string>
+    <string name="unlock">UNLOCK</string>
+    <string name="unlocked">Unlocked</string>
+    <string name="extra1_desc">PACK 1: Unlock 50 more Cards of all types to increase the fun!</string>
+    <string name="extra4_desc">PACK 2: Unlock 30 more Cards of all types to increase the fun!</string>
+    <string name="extra2_desc">Unlock 25 EXTREME cards!</string>
+    <string name="extra3_desc">Unlock 25 cards with HOT challenges!</string>
+    <string name="disabled">Disabled</string>
+    <string name="enabled">Enabled</string>
+    <string name="free_cards">MORE CARDS</string>
+    <string name="tutorial_text1">For playing <b>Party Cards</b> you will need:\n\n- A soft drink like Beer or Wine or some strong alcohol like Vodka, Rum, Gin mixed with soda or juice.
+        \n\n- Shot glasses and some strong alcohol to fill it.\n\n - Friends (optional depending on the power of your imagination)\n\nWhen <b>Party Cards</b> tells you to <i>drink a sip</i> drink from your soft drink glass. When it tells you to <i>drink a shot</i> fill the shot glass with strong alcohol and drink it.</string>
+    <string name="tutorial_text2">The game consist in drawing cards using the next card button. There are four types of cards: Common, Rare, Epic and Legendary. The challenges that will appear
+    in the cards will be more difficult based on their rarity. Have fun seeing your friends get Legendary challenges or cry if you are the lucky one. Remember you can turn off some
+        types of cards in the options menu and you can unlock <b>more cards for free</b> clicking the MORE CARDS button in the start menu. Drink with responsibility because we will not be responsible for any consequences that could happen. THANK YOU for downloading our app. <b><i>YOU ARE A BEAUTIFUL PERSON!</i></b></string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="special_cards">Special Cards</string>
+    <string name="standard_cards">Standard Cards</string>
+</resources>

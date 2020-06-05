@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/store1080"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        style="@style/textGameMenu"
+        android:id="@+id/tv_extra_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_extra_explanation"/>
+
+    <ScrollView
+        android:id="@+id/extra_scroll"
+        android:layout_below="@id/tv_extra_explanation"
+        android:layout_above="@id/numberCards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/textExtraCateg"
+                android:id="@+id/TV_standar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/standard_cards"/>
+
+            <LinearLayout
+                android:id="@+id/LL_extra1"
+                android:layout_below="@id/TV_standar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/gradient_black_white">
+
+                <TextView
+                    android:background="@drawable/extra_more1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/extra1_desc" />
+
+                <Button
+                    android:id="@+id/b_unlock1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unlock"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_extra4"
+                android:layout_below="@id/LL_extra1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/gradient_black_white">
+
+                <TextView
+                    android:background="@drawable/extra_more2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/extra4_desc" />
+
+                <Button
+                    android:id="@+id/b_unlock4"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unlock"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/textExtraCateg"
+                android:id="@+id/TV_special"
+                android:layout_below="@id/LL_extra4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/special_cards"/>
+
+            <LinearLayout
+                android:id="@+id/LL_extra2"
+                android:layout_below="@id/TV_special"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/gradient_black_white">
+
+                <TextView
+                    android:background="@drawable/extra_extreme2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/extra2_desc" />
+
+                <Button
+                    android:id="@+id/b_unlock2"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unlock"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_extra3"
+                android:layout_below="@id/LL_extra2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/gradient_black_white">
+
+                <TextView
+                    android:background="@drawable/extra_hot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/extra3_desc" />
+
+                <Button
+                    android:id="@+id/b_unlock3"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unlock"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <!--
+    <Button
+        android:id="@+id/b_reverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="reverse" />
+     -->
+
+    <TextView
+        android:id="@+id/numberCards"
+        android:layout_height="60dp"
+        android:layout_width="300dp"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/textGameCards"
+        android:layout_marginBottom="40dp"
+        android:text="@string/totalCards"/>
+
+</RelativeLayout>

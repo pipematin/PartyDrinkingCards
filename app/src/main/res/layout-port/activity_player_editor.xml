@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/RL_PLayerEditor">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bar_player_editor"/>
+
+    <LinearLayout
+        android:id="@+id/LL_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Img_Game"
+        android:layout_marginBottom="75dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TV_PlayersText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="italic|bold"
+            android:textColor="@color/darkRed"
+            android:background="@color/lightBlack"
+            android:text="@string/players" />
+
+        <ListView
+            android:id="@+id/lv_playerEditor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/button_shape_orange"
+        android:id="@+id/Btn_addPlayerNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:text="@string/b_addPlayer" />
+
+    <Button
+        android:background="@drawable/button_shape_green"
+        android:id="@+id/Btn_startGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:text="@string/b_ng" />
+
+</RelativeLayout>
