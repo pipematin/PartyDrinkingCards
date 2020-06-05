@@ -820,7 +820,19 @@ insert into cards (content,content_es,players,type)
  values ("Talk each other and choose another player to drink 1 shot",
  "Hablad entre vosotros y elegir a otro jugador para que beba 1 chupito",3,4);
 
- /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+  /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/ /*------------------------------------------------------*/
+
  /*------------------------------------------------------*/
  /*--------------------EXTRA 1------------*/
  /*------------------------------------------------------*/
@@ -1373,31 +1385,31 @@ insert into cards (content,content_es,players,type)
 
  /*-------- 1 player ------------*/;
 
- insert into cards (content,content_es,players,type,exxtra)
+ insert into cards (content,content_es,players,type)
   values ("Drink 1 sip for each other player taller than you",
   "Bebe 1 trago por cada otro jugador más alto que tú",1,2);
 
- insert into cards (content,content_es,players,type,exxtra)
+ insert into cards (content,content_es,players,type)
   values ("Drink 1 sip for each other player smaller than you",
   "Bebe 1 trago por cada otro jugador más pequeño que tú",1,2);
 
- insert into cards (content,content_es,players,type,exxtra)
+ insert into cards (content,content_es,players,type)
   values ("Drink 1 sip for each other player older than you",
   "Bebe 1 trago por cada otro jugador más viejo que tú",1,2);
 
- insert into cards (content,content_es,players,type,exxtra)
+ insert into cards (content,content_es,players,type)
   values ("Drink 1 sip for each other player younger than you",
   "Bebe 1 trago por cada otro jugador más joven que tú",1,2);
 
- insert into cards (content,content_es,players,type,exxtra)
+ insert into cards (content,content_es,players,type)
   values ("Starting from the chosen player name ALCOHOLOLIC DRINKS BRANDS, the one who fails drinks 1 sip",
   "Empezando por el jugador elegido id nombrando MARCAS DE BEBIDAS ALCOHOLICAS, el que falle bebe 1 trago",1,2);
 
- insert into cards (content,content_es,players,type,exxtra)
+ insert into cards (content,content_es,players,type)
   values ("Starting from the chosen player name COUNTRIES THAT HAVE MATCHING BORDERS WITH RUSSIA, the one who fails drinks 1 sip",
   "Empezando por el jugador elegido id nombrando PAISES QUE TENGAN FRONTERA CON RUSIA, el que falle bebe 1 trago",1,2);
 
- insert into cards (content,content_es,players,type,exxtra)
+ insert into cards (content,content_es,players,type)
   values ("Starting from the chosen player name CELEBRITIES THAT ENDED ON DRUGS, the one who fails drinks 1 sip",
   "Empezando por el jugador elegido id nombrando FAMOSOS QUE ACABARON EN LAS DROGAS, el que falle bebe 1 trago",1,2);
 
@@ -1512,5 +1524,147 @@ insert into cards (content,content_es,players,type)
  /*-------- 3 players ------------*/;
 
  insert into cards (content,content_es,players,type)
-  values ("Watch 1 minute of zoofilic porn or dirnk 1 shot",
+  values ("Watch 1 minute of zoofilic porn or drink 1 shot",
   "Mirad un minuto de porno zoofilico o bebed un chupito",3,4);
+
+
+
+
+ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/
+ /*--------------------EXTRA 5------------*/
+ /*------------------------------------------------------*/
+ /*------------------------------------------------------*/
+
+ /*-------------------------------Comunes---------------------------------*/;
+ /*-------- 0 players ------------*/;
+  insert into cards (content,content_es,players,type)
+   values ("The player that has the bigger beard drinks 1 sip",
+   "El jugador que tenga mas barba bebe un trago bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("The player that has the more body hair drinks 1 sip",
+   "El jugador que tenga mas pelo en pecho bebe 1 trago",0,1);
+
+    insert into cards (content,content_es,players,type)
+     values ("The player that has the more chest drinks 1 sip",
+     "El jugador que tenga mas pecho bebe 1 trago",0,1);
+
+ /*-------- 1 player ------------*/;
+
+ /*-------- 2 players ------------*/;
+
+ /*-------- 3 players ------------*/;
+
+ /*--------------------------------Raras-----------------------------------*/;
+ /*-------- 0 players ------------*/;
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip for each time you have masturbated today",
+   "Bebe 1 trago por cada vez que te has masturbado hoy",0,2);
+
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip for each time you have taken a shit today",
+   "Bebe 1 trago por cada vez que has cagado hoy",0,2);
+
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip for each videogame you have played today",
+   "Bebe 1 trago por cada videojuego que has jugado hoy",0,2);
+
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip for each photograph you have taken today",
+   "Bebe 1 trago por cada foto que hayas hecho hoy",0,2);
+
+ /*-------- 1 player ------------*/;
+insert into cards (content,content_es,players,type)
+ values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY IN A FAMILY DINNER AND IN AN ORGY, the one who fails drinks 1 sip",
+ "Empezando por el jugador elegido decir una frase QUE PUEDES DECIR EN UNA CENA FAMILIAR Y UNA ORGIA, el que falle bebe 1 trago",1,2);
+
+ insert into cards (content,content_es,players,type)
+  values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY ABOUT YOUR CAR BUT NOT YOUR PARTNER, the one who fails drinks 1 sip",
+  "Empezando por el jugador elegido decir una frase QUE PUEDES DECIR DE TU COCHE PERO NO DE TU PAREJA , el que falle bebe 1 trago",1,2);
+
+ insert into cards (content,content_es,players,type)
+  values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY TO YOUR DOG BUT NOT YOUR PARTNER, the one who fails drinks 1 sip",
+  "Empezando por el jugador elegido decir una frase QUE PUEDES DECIR A TU PERRO PERO NO DE TU PAREJA , el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+ values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY IN CHURCH AND IN SEX, the one who fails drinks 1 sip",
+ "Empezando por el jugador elegido decir una frase QUE PUEDES DECIR EN LA IGLESIA Y MIENTRAS TIENES SEXO, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+    values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY IN A FUNERAL AND IN A WEDDING, the one who fails drinks 1 sip",
+    "Empezando por el jugador elegido decir una frase QUE PUEDES DECIR EN UN FUNERAL Y UNA BODA, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+    values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY IN A FUNERAL AND IN A WEDDING, the one who fails drinks 1 sip",
+    "Empezando por el jugador elegido decir una frase QUE PUEDES DECIR EN UN FUNERAL Y UNA BODA, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+    values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY DURING SEX AND A POLITICAL DEBATE, the one who fails drinks 1 sip",
+    "Empezando por el jugador elegido decir una frase QUE PUEDES DECIR EN UN DURANTE EL SEXO Y EN UN DEBATE POLITICO, el que falle bebe 1 trago",1,2);
+
+ insert into cards (content,content_es,players,type)
+  values ("Starting from the chosen player name PLACES YOU CAN HAVE SEX IN, the one who fails drinks 1 sip",
+  "Empezando por el jugador elegido id nombrando LUGARES DONDE PUEDES TENER SEXO, el que falle bebe 1 trago",1,2);
+
+  insert into cards (content,content_es,players,type)
+   values ("Starting from the chosen player name CARTOON CHARACTERS THAT WERE TO SEXUAL, the one who fails drinks 1 sip",
+   "Empezando por el jugador elegido id nombrando PERSONAJES DE DIBUJOS QUE ERAN DEMASIADO SEXUALES, el que falle bebe 1 trago",1,2);
+  
+  insert into cards (content,content_es,players,type)
+     values ("Starting from the chosen player name THINGS THAT MEN EXAGGERATE ABOUT, the one who fails drinks 1 sip",
+     "Empezando por el jugador elegido id nombrando COSAS SOBRE LA QUE EXAGERAN LOS HOMBRES, el que falle bebe 1 trago",1,2);
+
+  insert into cards (content,content_es,players,type)
+        values ("Starting from the chosen player name THINGS THAT WOMEN EXAGGERATE ABOUT, the one who fails drinks 1 sip",
+        "Empezando por el jugador elegido id nombrando COSAS SOBRE LA QUE EXAGERAN LAS MUJERES, el que falle bebe 1 trago",1,2);
+
+  insert into cards (content,content_es,players,type)
+     values ("Starting from the chosen player name THINGS THAT YOU PUT IN YOUR MOUTH BUT DON'T SWALLOW, the one who fails drinks 1 sip",
+     "Empezando por el jugador elegido id nombrando COSAS SOBRE QUE PONES EN TU BOCA PERO NO TE LO TRAGAS, el que falle bebe 1 trago",1,2);
+
+  insert into cards (content,content_es,players,type)
+       values ("Starting from the chosen player name THINGS THAT YOU WOULD HATE A GUEST DOING IN YOUR HOUSE, the one who fails drinks 1 sip",
+       "Empezando por el jugador elegido id nombrando COSAS QUE ODIARIAS QUE UN INVITADO HICIERA EN TU CASA, el que falle bebe 1 trago",1,2);
+
+  insert into cards (content,content_es,players,type)
+         values ("Starting from the chosen player name JOBS THAT YOUR MOTHER WILL HATE YOU DID, the one who fails drinks 1 sip",
+         "Empezando por el jugador elegido id nombrando TRABAJOS QUE TU MADRE ODIAIRIA QUE HICIERAS, el que falle bebe 1 trago",1,2);
+
+
+ /*-------- 2 players ------------*/;
+
+ /*-------- 3 players ------------*/;
+
+ /*--------------------------------Epicas-----------------------------------*/;
+ /*-------- 0 players ------------*/;
+ insert into cards (content,content_es,players,type)
+  values ("Make pairs. Until a Legendary card appears everytime one of you drinks the chosen partner has to drink.",
+  "Haced parejas. Hasta que aparezca una carta Legendaria siempre que alguien beba bebe el compañero",0,3);
+ /*-------- 1 player ------------*/;
+ insert into cards (content,content_es,players,type)
+  values ("Until a Legendary card appears you can only make animal sounds",
+  "Hasta que aparezca una carta Legendaria solo puedes hacer sonidos de animales",1,3);
+
+  insert into cards (content,content_es,players,type)
+   values ("Until a Legendary card appears you can only speak using movie quotes",
+   "Hasta que aparezca una carta Legendaria solo puedes hablar usando frases de peliculas",1,3);
+ /*-------- 2 players ------------*/;
+
+ /*--------------------------------Legendarias-----------------------------------*/;
+ /*-------- 0 players ------------*/;
+ insert into cards (content,content_es,players,type)
+  values ("Last one shutting down his mobile phone drinks 1 shot",
+  "El último en apagar su movil bebe 1 chupito",0,4);
+
+ /*-------- 1 player ------------*/;
+
+ /*-------- 2 players ------------*/;
+ insert into cards (content,content_es,players,type)
+  values ("Do a wet t-shirt competition or drink a shot",
+  "Haced un concurso de camiseta mojada o bebed un chupito",2,4);
+
+  insert into cards (content,content_es,players,type)
+   values ("Do a wet t-shirt competition or drink a shot",
+   "Haced un concurso de camiseta mojada o bebed un chupito",2,4);
+ /*-------- 3 players ------------*/;
