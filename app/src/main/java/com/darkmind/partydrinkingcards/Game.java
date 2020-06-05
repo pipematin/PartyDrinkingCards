@@ -20,9 +20,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.ads.AdRequest;
 import java.util.ArrayList;
 
 public class Game extends Activity {
@@ -44,26 +41,13 @@ public class Game extends Activity {
     private int adCount = 0;
     private final int ADMAX = 7;
 
-    private InterstitialAd interstitialAd;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         final DBHelper dbHelper = new DBHelper(this);
 
-        Publicity publicity = new Publicity();
-
-        interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId(publicity.getInterstitial());
-        interstitialAd.loadAd(new AdRequest.Builder().build());
-        interstitialAd.setAdListener(new AdListener(){
-            @Override
-            public void onAdClosed() {
-                interstitialAd.loadAd(new AdRequest.Builder().build());
-                nextCard();
-            }
-        });
 
         Button btn_nextCard = findViewById(R.id.Btn_nextCard);
         btn_nextCard.setOnClickListener(new View.OnClickListener() {
@@ -83,14 +67,7 @@ public class Game extends Activity {
                     }
                 }
 
-                /*PUBLICIDAD*/
-                if(adCount >= ADMAX && interstitialAd.isLoaded()){
-                    interstitialAd.show();
-                    adCount = 0;
-                }else{
-                    adCount++;
-                    nextCard();
-                }
+                nextCard();
             }
         });
 

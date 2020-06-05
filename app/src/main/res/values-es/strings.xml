@@ -60,4 +60,7 @@
     <string name="loading">Cargando&#8230;</string>
     <string name="special_cards">Cartas Especiales</string>
     <string name="standard_cards">Cartas Estandar</string>
+    <string name="language">Idioma</string>
+    <string name="english">Ingles</string>
+    <string name="spanish">Español</string>
 </resources>

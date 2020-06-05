@@ -58,4 +58,7 @@
     <string name="loading">Loading&#8230;</string>
     <string name="special_cards">Special Cards</string>
     <string name="standard_cards">Standard Cards</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
 </resources>

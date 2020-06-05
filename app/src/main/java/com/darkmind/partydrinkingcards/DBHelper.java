@@ -281,7 +281,9 @@ public class DBHelper extends SQLiteOpenHelper {
     /*----------CARDS-------------*/
     public int numberOfCards(){
         SQLiteDatabase db = getReadableDatabase();
-        return (int) DatabaseUtils.queryNumEntries(db, CARDS_TABLE_NAME);
+        int i = (int) DatabaseUtils.queryNumEntries(db, CARDS_TABLE_NAME);
+        db.close();
+        return i;
     }
 
     private int numberOfCardTypes(int card_type){
@@ -344,7 +346,7 @@ public class DBHelper extends SQLiteOpenHelper {
         randomNum =getRandomNum(min,maxCards);
         if(cursor.moveToPosition(randomNum)){
             int numPlayers = cursor.getInt(cursor.getColumnIndex(CARDS_COLUMN_PLAYERS));
-            String language = Locale.getDefault().getLanguage();
+            String language = context.getResources().getConfiguration().locale.getLanguage();
             if (language.equals("es") ) {
                 content = cursor.getString(cursor.getColumnIndex(CARDS_COLUMN_CONTENT_ES));
             }else{

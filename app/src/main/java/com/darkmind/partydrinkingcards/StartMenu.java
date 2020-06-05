@@ -16,7 +16,6 @@ import android.widget.ImageButton;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.google.android.gms.ads.MobileAds;
 
 public class StartMenu extends Activity{
     private Context mContext;
@@ -25,8 +24,6 @@ public class StartMenu extends Activity{
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
-
-        Publicity publicity = new Publicity();
 
         Button b_ng;
         Button b_options;
@@ -54,13 +51,13 @@ public class StartMenu extends Activity{
             }
         });
 
-        Button b_extra = findViewById(R.id.b_extra);
-        b_extra.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Extra.class));
-            }
-        });
+//        Button b_extra = findViewById(R.id.b_extra);
+//        b_extra.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(),Extra.class));
+//            }
+//        });
 
         ImageButton imageButton = findViewById(R.id.tutorial_button);
         imageButton.setOnClickListener(new View.OnClickListener() {
@@ -82,7 +79,6 @@ public class StartMenu extends Activity{
         TextView tv_cards = findViewById(R.id.numberCards);
         tv_cards.setText(totalCards);
 
-        MobileAds.initialize(this, publicity.getAppid());
 
         if(dbHelper.getParameters().sound == 1){
             Intent svc = new Intent(this, BackgroundSoundService.class);
