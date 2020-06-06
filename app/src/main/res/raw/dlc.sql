@@ -803,7 +803,7 @@ insert into cards (content,content_es,players,type)
 
   insert into cards (content,content_es,players,type)
      values ("Starting from the chosen player name THINGS THAT YOU PUT IN YOUR MOUTH BUT DON'T SWALLOW, the one who fails drinks 1 sip",
-     "Empezando por el jugador elegido id nombrando COSAS SOBRE QUE PONES EN TU BOCA PERO NO TE LAS TRAGAS, el que falle bebe 1 trago",1,2);
+     "Empezando por el jugador elegido id nombrando COSAS QUE PONES EN TU BOCA PERO NO TE LAS TRAGAS, el que falle bebe 1 trago",1,2);
 
   insert into cards (content,content_es,players,type)
        values ("Starting from the chosen player name THINGS THAT YOU WOULD HATE A GUEST DOING IN YOUR HOUSE, the one who fails drinks 1 sip",
