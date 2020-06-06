@@ -705,8 +705,28 @@
  /*-------------------------------Comunes---------------------------------*/;
  /*-------- 0 players ------------*/;
   insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip if your parents caught you masturbating",
+   "Bebe 1 trago si tus padres te han pillado masturbandote",0,1);
+
+   insert into cards (content,content_es,players,type)
+      values ("Drink 1 sip if you don't know how to swim",
+      "Bebe 1 trago si no sabes nadar",0,1);
+
+   insert into cards (content,content_es,players,type)
+      values ("Drink 1 sip if you don't know how to ride a bicycle",
+      "Bebe 1 trago si no sabes andar en bici",0,1);
+
+   insert into cards (content,content_es,players,type)
+      values ("Drink 1 sip if you don't have a trophy at home",
+      "Bebe 1 trago si no tienes un trofeo en casa",0,1);
+
+  insert into cards (content,content_es,players,type)
+     values ("Drink 1 sip if you have ever been kicked out a pub",
+     "Bebe 1 trago si te han echado de un bar",0,1);
+
+  insert into cards (content,content_es,players,type)
    values ("The player that has the bigger beard drinks 1 sip",
-   "El jugador que tenga mas barba bebe un trago bebe 1 trago",0,1);
+   "El jugador que tenga mas barba bebe 1 trago",0,1);
 
   insert into cards (content,content_es,players,type)
    values ("The player that has the more body hair drinks 1 sip",
@@ -798,6 +818,34 @@
    values ("Drink 1 sip for each traffic ticket you have ever gotten",
    "Bebe un trago por cada multa de tráfico que te hayan puesto en la vida.",1,2);
 
+  insert into cards (content,content_es,players,type)
+   values ("Say what you hate the most from a person or drink 2 sips",
+   "Di lo que mas detestas de una persona o bebe 2 tragos.",1,2);
+
+  insert into cards (content,content_es,players,type)
+   values ("Say what you love the most from a person or drink 2 sips",
+   "Di lo que mas valoras de una persona o bebe 2 tragos.",1,2);
+
+insert into cards (content,content_es,players,type)
+   values ("Say one change you would make to your life if you could go back in time or drink 2 sips",
+   "Di un cambio que harías en tu vida si pudieras ir atras en el tiempo o bebe 2 tragos.",1,2);
+
+insert into cards (content,content_es,players,type)
+   values ("Last one that has taken a shit today gifts 2 sips",
+   "El ultimo que haya cagado hoy regala 2 tragos.",1,2);
+
+insert into cards (content,content_es,players,type)
+   values ("Do a Fortnite dance or drink 2 sips",
+   "Haz un baile del Fortnite o bebe 2 tragos.",1,2);
+
+insert into cards (content,content_es,players,type)
+   values ("Say your best quality or drink 2 sips",
+   "Di tu mayor virtud o bebe 2 tragos.",1,2);
+
+insert into cards (content,content_es,players,type)
+   values ("Say your biggest defect or drink 2 sips",
+   "Di tu mayor defecto o bebe 2 tragos.",1,2);
+
  insert into cards (content,content_es,players,type)
   values ("Imagine that due to a radioactive accident you had a MEGA-ASS. What will be your superhero name and what will you do with that superpower?",
   "Imagina que debido a un accidente radiactivo tienes un MEGA-CULO. ¿Cual seria tu nombre de superheroe y para que usarias tu superpoder? ",1,2);
@@ -805,6 +853,34 @@
 insert into cards (content,content_es,players,type)
  values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY IN A FAMILY DINNER AND IN AN ORGY, the one who fails drinks 1 sip",
  "Empezando por el jugador elegido decir una frase QUE PUEDES DECIR EN UNA CENA FAMILIAR Y UNA ORGIA, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+ values ("Starting from the chosen player name LEAGUE OF LEGENDS CHAMPIONS, the one who fails drinks 1 sip",
+ "Empezando por el jugador elegido nombrar CAMPEONES DEL LEAGUE OF LEGENDS, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+ values ("Starting from the chosen player name PRESIDENTS OF YOUR COUNTRY, the one who fails drinks 1 sip",
+ "Empezando por el jugador elegido nombrar PRESIDENTES DE TU PAIS, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+ values ("Starting from the chosen player name MOVIES STARRED BY DI CAPRIO, the one who fails drinks 1 sip",
+ "Empezando por el jugador elegido nombrar PELICULAS EN LAS QUE SALE DI CAPRIO, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+ values ("Starting from the chosen player name DISHES WITH CHICKEN, the one who fails drinks 1 sip",
+ "Empezando por el jugador elegido nombrar PLATOS QUE CONTIENEN POLLO, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+ values ("Starting from the chosen player name VIDEOGAMES RELEASED THIS YEAR, the one who fails drinks 1 sip",
+ "Empezando por el jugador elegido nombrar VIDEOJUEGOS QUE HAN SALIDO ESTE AÑO, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+ values ("Starting from the chosen player name JAPANESE WORDS, the one who fails drinks 1 sip",
+ "Empezando por el jugador elegido nombrar PALABRAS JAPONESAS, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+ values ("Starting from the chosen player name NAMES THAT START AND END IN A VOWEL, the one who fails drinks 1 sip",
+ "Empezando por el jugador elegido nombrar NOMBRES QUE EMPIECEN Y ACABEN EN VOCAL, el que falle bebe 1 trago",1,2);
 
  insert into cards (content,content_es,players,type)
   values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY ABOUT YOUR CAR BUT NOT YOUR PARTNER, the one who fails drinks 1 sip",
@@ -935,6 +1011,10 @@ insert into cards (content,content_es,players,type)
   "Haced parejas. Hasta que aparezca una carta Legendaria siempre que alguien beba bebe el compañero",0,3);
  /*-------- 1 player ------------*/;
  insert into cards (content,content_es,players,type)
+  values ("Until a Legendary card appears you can say BRINDEMOS! and everyone will have to cheer and drink a sip",
+  "Hasta que aparezca una carta Legendaria puedes decir BRINDEMOS! y todos tienen que brindar y beber un trago",1,3);
+
+ insert into cards (content,content_es,players,type)
   values ("Until a Legendary card appears you can only make animal sounds",
   "Hasta que aparezca una carta Legendaria solo puedes hacer sonidos de animales",1,3);
 
@@ -955,6 +1035,18 @@ insert into cards (content,content_es,players,type)
    "Gime o bebe 5 tragos",1,3);
 
   insert into cards (content,content_es,players,type)
+   values ("Rub an ice cube on your nipples or drink 5 sips",
+   "Pasate un cubito de hielo por los pezones o bebe 5 tragos",1,3);
+
+  insert into cards (content,content_es,players,type)
+   values ("Eat the lemon peel or drink 5 sips",
+   "Comete la piel de un limon o bebe 5 tragos",1,3);
+
+  insert into cards (content,content_es,players,type)
+   values ("Say which of the party people you hate the most or drink 5 sips",
+   "Di quien te cae peor de la fiesta o bebe 5 tragos",1,3);
+
+  insert into cards (content,content_es,players,type)
    values ("Sing I will always love you or drink 5 sips",
    "Canta I will always love you o bebe 5 tragos",1,3);
 
@@ -970,6 +1062,14 @@ insert into cards (content,content_es,players,type)
     values ("Tell the weirdest porn video you have seen. The one who is less weird drinks 6 sips",
     "Contad el video porno mas raro que hayais visto. El menos raro bebe 6 tragos",2,3);
 
+   insert into cards (content,content_es,players,type)
+    values ("Until a Legendary card appears everything that the second players says has to be translated by the first player to an invented language. Drinks 1 sip every time he fails",
+    "Hasta que aparezca una carta legendaria el primer jugador tiene que traducir todo lo que diga el segundo a un idioma inventado. Bebe 1 trago cade vez que falle",2,3);
+
+   insert into cards (content,content_es,players,type)
+    values ("Commentate a porn video like soccer commentators or drink 5 sips",
+    "Comentad un video porno como comentaristas de futbol o bebed 5 tragos",2,3);
+
   insert into cards (content,content_es,players,type)
    values ("First player guesses the second players underwear color. If he is right the second player drinks 6 sips, if not he drink 6 sips instead.",
    "EL primer jugador adivina el color del segundo jugador. Si acierta el segundo jugador bebe 6 tragos, si no el primero bebe 6 tragosº",2,3);
@@ -982,6 +1082,14 @@ insert into cards (content,content_es,players,type)
   insert into cards (content,content_es,players,type)
    values ("First one laughing drinks 1 shot",
    "El primero en reirse bebe 1 chupito",0,4);
+
+  insert into cards (content,content_es,players,type)
+   values ("First one that talks drinks 1 shot",
+   "El primero en hablar bebe 1 chupito",0,4);
+
+  insert into cards (content,content_es,players,type)
+   values ("The players who have the smallest coin decide which player in the party drinks a shot.",
+   "Los jugadores que tengan la moneda mas pequeña deciden que jugador de la fiesta bebe un chupito",0,4);
 
  /*-------- 1 player ------------*/;
  insert into cards (content,content_es,players,type)
@@ -1001,3 +1109,7 @@ insert into cards (content,content_es,players,type)
    values ("Put an ice cube in your genitals. The first player to remove it drinks 1 shot. If you both hold it until it completely melts ALL the other players drink 1 shot. ",
    "Meted un cubito de hielo en vuestros genitales. EL jugador que primero se lo quite bebe un chupito. Si los dos aguantais hasta que se derrita TODOS los demas jugadores beben un chupito.",2,4);
  /*-------- 3 players ------------*/;
+
+  insert into cards (content,content_es,players,type)
+   values ("Continue playing the game. The first of you that ends up without drink in his glass drinks a shot. ",
+   "Seguid jugando. El primero de vosotros que se quede sin bebida en el vaso bebe un chupito.",3,4);
