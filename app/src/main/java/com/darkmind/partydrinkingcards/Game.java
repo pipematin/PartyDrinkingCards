@@ -7,6 +7,7 @@ import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.graphics.drawable.LayerDrawable;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.VibrationEffect;
@@ -21,6 +22,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class Game extends Activity {
 
@@ -32,14 +35,13 @@ public class Game extends Activity {
     public static final int GAME_TYPE_FAST = 2;
     private final int LEGENDARY_START = 7;
     private int card_count = 0;
+    private boolean sound = false;
 
-    private int COMMON_PERCENT = 40;
-    private int RARE_PERCENT = 70;
-    private int EPIC_PERCENT = 90;
-    private int LEGEND_PERCENT = 40;
+    private int COMMON_PERCENT = 30;
+    private int RARE_PERCENT = 60;
+    private int EPIC_PERCENT = 85;
 
-    private int adCount = 0;
-    private final int ADMAX = 7;
+    private ArrayList<Integer> sound_effects = new ArrayList<Integer>();
 
 
     @Override
@@ -47,6 +49,12 @@ public class Game extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         final DBHelper dbHelper = new DBHelper(this);
+
+        if (dbHelper.getParameters().sound == 1){
+            fill_sound_effects();
+            this.sound = true;
+            System.out.println("SOUND OK");
+        }
 
 
         Button btn_nextCard = findViewById(R.id.Btn_nextCard);
@@ -62,7 +70,7 @@ public class Game extends Activity {
                             vibrator.vibrate(VibrationEffect.createOneShot(60, VibrationEffect.DEFAULT_AMPLITUDE));
                         }else{
                             //deprecated in API 26
-                            vibrator.vibrate(60);
+                            vibrator.vibrate(30);
                         }
                     }
                 }
@@ -88,20 +96,35 @@ public class Game extends Activity {
         challenge_game.setTypeface(typeface);
 
 
-        if(new DBHelper(this).getParameters().sound == 1){
-            Intent svc=new Intent(this, BackgroundSoundService.class);
-            svc.setAction("PLAY_GAME");
-            startService(svc);
+    }
+    private void fill_sound_effects(){
+        sound_effects.add(R.raw.blyamp3);
+        sound_effects.add(R.raw.bully);
+        sound_effects.add(R.raw.cyka);
+        sound_effects.add(R.raw.fuck);
+        sound_effects.add(R.raw.fuckers);
+        sound_effects.add(R.raw.jhonny);
+        sound_effects.add(R.raw.jojo);
+        sound_effects.add(R.raw.why_are_you_running);
+        sound_effects.add(R.raw.yeah_boy);
+    }
+
+    private void playSoundEffect(){
+        int i = DBHelper.getRandomNum(0, sound_effects.size()-1);
+        int sound = sound_effects.get(i);
+        System.out.println("i: " + i + "\nID: "+ sound);
+
+        MediaPlayer mp = MediaPlayer.create(this, sound);
+        mp.setVolume(100,100);
+        try{
+            mp.start();
+        } catch (Exception e){
+            e.printStackTrace();
         }
     }
 
     @Override
     public void onBackPressed() {
-        if(new DBHelper(this).getParameters().sound == 1){
-            Intent svc=new Intent(this, BackgroundSoundService.class);
-            svc.setAction("PLAY_NORMAL");
-            startService(svc);
-        }
         super.onBackPressed();
     }
 
@@ -121,6 +144,12 @@ public class Game extends Activity {
 
         String type = getStringType(dataReturn.type,tv_type);
         tv_type.setText(type);
+
+        if(dataReturn.type == Card.LEGENDARY_INDEX && this.sound ){
+            System.out.println("PLAYING SOUND");
+            playSoundEffect();
+        }
+
         Animation animation = AnimationUtils.loadAnimation(this,R.anim.card_transition);
         final Animation animation1 = AnimationUtils.loadAnimation(this,R.anim.card_transition);
         final Animation animation2 = AnimationUtils.loadAnimation(this,R.anim.card_transition);
@@ -195,8 +224,6 @@ public class Game extends Activity {
 
         img.startAnimation(animation2);
         tv_type.startAnimation(animation);
-
-
     }
 
     private DBHelper.DataReturn getCardByOptions(){
@@ -280,33 +307,16 @@ public class Game extends Activity {
 
     @Override
     protected void onResume() {
-        if(new DBHelper(this).getParameters().sound == 1){
-            if( !BackgroundSoundService.playing){
-                Intent svc=new Intent(this, BackgroundSoundService.class);
-                svc.setAction("PLAY");
-                startService(svc);
-            }
-        }
         super.onResume();
     }
 
     @Override
     protected void onPause() {
-        if(new DBHelper(this).getParameters().sound == 1){
-            if(BackgroundSoundService.playing){
-                Intent svc=new Intent(this, BackgroundSoundService.class);
-                svc.setAction("PAUSE");
-                startService(svc);
-            }
-        }
         super.onPause();
     }
 
     @Override
     protected void onDestroy() {
-        if(new DBHelper(this).getParameters().sound == 1){
-            stopService(new Intent(this,BackgroundSoundService.class));
-        }
         super.onDestroy();
     }
 }

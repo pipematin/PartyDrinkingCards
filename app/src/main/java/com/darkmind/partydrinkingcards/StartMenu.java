@@ -3,10 +3,12 @@ package com.darkmind.partydrinkingcards;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +18,8 @@ import android.widget.ImageButton;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class StartMenu extends Activity{
     private Context mContext;
@@ -74,6 +78,14 @@ public class StartMenu extends Activity{
         tv_options.setTypeface(typeface);
 
         DBHelper dbHelper = new DBHelper(this);
+        int lang = dbHelper.getParameters().language;
+        String disp_lang = getResources().getConfiguration().locale.getDisplayLanguage();
+        System.out.println(disp_lang);
+        if (lang == 1 && !("English".equals(disp_lang))){
+            setLocale("en");
+        }else if(lang == 2 && !("Spanish".equals(getResources().getConfiguration().locale.getDisplayLanguage()))){
+            setLocale("es");
+        }
 
         String totalCards = res.getString(R.string.totalCards,dbHelper.numberOfCards());
         TextView tv_cards = findViewById(R.id.numberCards);
@@ -84,6 +96,18 @@ public class StartMenu extends Activity{
             Intent svc = new Intent(this, BackgroundSoundService.class);
             startService(svc); //OR stopService(svc);
         }
+    }
+
+    public void setLocale(String lang) {
+        Locale myLocale = new Locale(lang);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+        Intent refresh = new Intent(this, StartMenu.class);
+        finish();
+        startActivity(refresh);
     }
 
     public void startGame(){

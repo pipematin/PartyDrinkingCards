@@ -187,9 +187,11 @@ public class Options extends Activity {
     public void onRBLanguageClicked(View view) {
         switch (view.getId()) {
             case R.id.RB_language_en:
+                dbHelper.setParameter(7, 1);
                 setLocale("en");
                 break;
             case R.id.RB_language_es:
+                dbHelper.setParameter(7, 2);
                 setLocale("es");
                 break;
         }

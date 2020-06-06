@@ -4,9 +4,9 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <application
         android:allowBackup="true"
-        android:icon="@drawable/drinkingstone_logo"
+        android:icon="@drawable/drinkingstone2_logo"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/drinkingstone_logo"
+        android:roundIcon="@drawable/drinkingstone2_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
 

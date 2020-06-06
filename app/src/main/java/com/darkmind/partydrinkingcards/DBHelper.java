@@ -29,6 +29,7 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String PARAMETERS_TABLE_NAME = "parameters";
     private static final String PARAMETERS_COLUMN_SOUND = "sound";
     private static final String PARAMETERS_COLUMN_VIBRATION = "vibration";
+    private static final String PARAMETERS_COLUMN_LANGUAGE = "language";
     private static final String PARAMETERS_COLUMN_COMMON = "common";
     private static final String PARAMETERS_COLUMN_RARE = "rare";
     private static final String PARAMETERS_COLUMN_EPIC = "epic";
@@ -67,7 +68,8 @@ public class DBHelper extends SQLiteOpenHelper {
                         PARAMETERS_COLUMN_COMMON + " integer," +
                         PARAMETERS_COLUMN_RARE + " integer," +
                         PARAMETERS_COLUMN_EPIC + " integer," +
-                        PARAMETERS_COLUMN_LEGENDARY + " integer)"
+                        PARAMETERS_COLUMN_LEGENDARY + " integer," +
+                        PARAMETERS_COLUMN_LANGUAGE + " integer)"
         );
 
         db.execSQL(
@@ -103,7 +105,8 @@ public class DBHelper extends SQLiteOpenHelper {
         insertParameterData(db);
         insertExtra(db);
 
-        insertDataFromFile(context,R.raw.insertdata,db);
+        insertDataFromFile(context, R.raw.insertdata, db);
+        insertDataFromFile(context,R.raw.dlc,db);
     }
 
     @Override
@@ -178,6 +181,7 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put(PARAMETERS_COLUMN_RARE,1);
         contentValues.put(PARAMETERS_COLUMN_EPIC,1);
         contentValues.put(PARAMETERS_COLUMN_LEGENDARY,1);
+        contentValues.put(PARAMETERS_COLUMN_LANGUAGE, 1);
         db.insert(PARAMETERS_TABLE_NAME,null, contentValues);
     }
 
@@ -194,7 +198,8 @@ public class DBHelper extends SQLiteOpenHelper {
                     cursor.getInt(cursor.getColumnIndex(PARAMETERS_COLUMN_COMMON)),
                     cursor.getInt(cursor.getColumnIndex(PARAMETERS_COLUMN_RARE)),
                     cursor.getInt(cursor.getColumnIndex(PARAMETERS_COLUMN_EPIC)),
-                    cursor.getInt(cursor.getColumnIndex(PARAMETERS_COLUMN_LEGENDARY))
+                    cursor.getInt(cursor.getColumnIndex(PARAMETERS_COLUMN_LEGENDARY)),
+                    cursor.getInt(cursor.getColumnIndex(PARAMETERS_COLUMN_LANGUAGE))
             );
             cursor.close();
             return parameterReturn;
@@ -224,6 +229,9 @@ public class DBHelper extends SQLiteOpenHelper {
                 break;
             case 6:
                 contentValues.put(PARAMETERS_COLUMN_LEGENDARY,Integer.toString(value));
+                break;
+            case 7:
+                contentValues.put(PARAMETERS_COLUMN_LANGUAGE,Integer.toString(value));
                 break;
         }
 
@@ -582,7 +590,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return dato;
     }
 
-    private int getRandomNum(int min, int max){
+    public static int getRandomNum(int min, int max){
             return min + (int)(Math.random() * ((max - min) + 1));
     }
     /*---------------CLASES DE RETORNO DE DATOS ----------------------*/
@@ -608,14 +616,16 @@ public class DBHelper extends SQLiteOpenHelper {
         public int rare;
         public int epic;
         public int legendary;
+        public int language;
 
-        private ParameterReturn(int sound, int vibration, int common, int rare, int epic, int legendary) {
+        private ParameterReturn(int sound, int vibration, int common, int rare, int epic, int legendary, int language) {
             this.sound = sound;
             this.vibration = vibration;
             this.common = common;
             this.rare = rare;
             this.epic = epic;
             this.legendary = legendary;
+            this.language = language;
         }
     }
 }
