@@ -708,6 +708,10 @@
    values ("Drink 1 sip if your parents caught you masturbating",
    "Bebe 1 trago si tus padres te han pillado masturbandote",0,1);
 
+insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip if you have Netflix",
+   "Bebe 1 trago si tienes Netflix",0,1);
+
    insert into cards (content,content_es,players,type)
       values ("Drink 1 sip if you don't know how to swim",
       "Bebe 1 trago si no sabes nadar",0,1);
@@ -801,6 +805,14 @@
    "Bebe 1 trago por cada vez que te has masturbado hoy",0,2);
 
   insert into cards (content,content_es,players,type)
+     values ("Say what is for you the most beautiful race or drink 2 sips",
+     "Di cual es para ti la raza mas bonita o bebe 2 tragos",0,2);
+
+  insert into cards (content,content_es,players,type)
+       values ("Say what is for you the worst country in the world or drink 2 sips",
+       "Di cual es para ti el peor pais o bebe 2 tragos",0,2);
+
+  insert into cards (content,content_es,players,type)
    values ("Drink 1 sip for each time you have taken a shit today",
    "Bebe 1 trago por cada vez que has cagado hoy",0,2);
 
@@ -813,10 +825,37 @@
    "Bebe 1 trago por cada foto que hayas hecho hoy",0,2);
 
  /*-------- 1 player ------------*/;
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip for each person that lives in your house",
+   "Bebe un trago por cada persona que vive en tu casa.",1,2);
+
+  insert into cards (content,content_es,players,type)
+     values ("Drink 1 sip for each person in the party that has the same sock color as you",
+     "Bebe un trago por cada persona que tenga el mismo color de calcetines en la fiesta.",1,2);
+
+  insert into cards (content,content_es,players,type)
+       values ("Drink 1 sip for each glass you have drank in the party",
+       "Bebe un trago por cada vaso que te hayas bebido en la fiesta en la fiesta.",1,2);
+
+  insert into cards (content,content_es,players,type)
+     values ("Say in which other country wouold you live and why or drink 2 sips",
+     "Di en que otro pais vivirias y porque o bebe 2 tragos.",1,2);
+
+  insert into cards (content,content_es,players,type)
+       values ("Describe physically your dream sexual partner or drink 2 sips",
+       "Describe fisicamente a tu persona sexualmente ideal o bebe 2 tragos.",1,2);
+
+  insert into cards (content,content_es,players,type)
+         values ("Say something you are afraid of or drink 2 sips",
+         "Cuenta algo que realmente te de miedo o bebe 2 tragos.",1,2);
 
   insert into cards (content,content_es,players,type)
    values ("Drink 1 sip for each traffic ticket you have ever gotten",
    "Bebe un trago por cada multa de tráfico que te hayan puesto en la vida.",1,2);
+
+  insert into cards (content,content_es,players,type)
+     values ("Say what is your dream job or drink 2 sips",
+     "Di cual es tu trabajo ideal o bebe 2 tragos.",1,2);
 
   insert into cards (content,content_es,players,type)
    values ("Say what you hate the most from a person or drink 2 sips",
@@ -899,8 +938,12 @@ insert into cards (content,content_es,players,type)
     "Empezando por el jugador elegido decir una frase QUE PUEDES DECIR EN UN FUNERAL Y UNA BODA, el que falle bebe 1 trago",1,2);
 
 insert into cards (content,content_es,players,type)
-    values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY IN A FUNERAL AND IN A WEDDING, the one who fails drinks 1 sip",
-    "Empezando por el jugador elegido decir una frase QUE PUEDES DECIR EN UN FUNERAL Y UNA BODA, el que falle bebe 1 trago",1,2);
+    values ("Starting from the chosen player name A PHRASE THAT WOULD OFFEND A LOT OF PEOPLE, the one who fails drinks 1 sip",
+    "Empezando por el jugador elegido decir una frase QUE OFENDERIA A MUCHISIMA GENTE, el que falle bebe 1 trago",1,2);
+
+insert into cards (content,content_es,players,type)
+    values ("Starting from the chosen player name AN EXCUSE TO NOT HAVE SEX, the one who fails drinks 1 sip",
+    "Empezando por el jugador elegido decir una EXCUSA PARA NO TENER SEXO, el que falle bebe 1 trago",1,2);
 
 insert into cards (content,content_es,players,type)
     values ("Starting from the chosen player name A PHRASE THAT YOU CAN SAY DURING SEX AND A POLITICAL DEBATE, the one who fails drinks 1 sip",
@@ -913,6 +956,14 @@ insert into cards (content,content_es,players,type)
   insert into cards (content,content_es,players,type)
    values ("Starting from the chosen player name CARTOON CHARACTERS THAT WERE TO SEXUAL, the one who fails drinks 1 sip",
    "Empezando por el jugador elegido id nombrando PERSONAJES DE DIBUJOS QUE ERAN DEMASIADO SEXUALES, el que falle bebe 1 trago",1,2);
+
+  insert into cards (content,content_es,players,type)
+     values ("Starting from the chosen player name THINGS THAT WOMEN LOVE ABOUT MEN, the one who fails drinks 1 sip",
+     "Empezando por el jugador elegido id nombrando COSAS DE LOS HOMBRES QUE GUSTAN A LAS MUJERES, el que falle bebe 1 trago",1,2);
+
+  insert into cards (content,content_es,players,type)
+       values ("Starting from the chosen player name THINGS THAT MEN LOVE ABOUT WOMEN, the one who fails drinks 1 sip",
+       "Empezando por el jugador elegido id nombrando COSAS DE LAS MUJERES QUE GUSTAN A LAS HOMBRES, el que falle bebe 1 trago",1,2);
 
   insert into cards (content,content_es,players,type)
      values ("Starting from the chosen player name THINGS THAT MEN EXAGGERATE ABOUT, the one who fails drinks 1 sip",
@@ -1013,6 +1064,10 @@ insert into cards (content,content_es,players,type)
  insert into cards (content,content_es,players,type)
   values ("Until a Legendary card appears you can say BRINDEMOS! and everyone will have to cheer and drink a sip",
   "Hasta que aparezca una carta Legendaria puedes decir BRINDEMOS! y todos tienen que brindar y beber un trago",1,3);
+
+insert into cards (content,content_es,players,type)
+  values ("Dance like Ricardo Milos or drink 5 sips",
+  "Baila como Ricardo Milos o bebe 5 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
   values ("Until a Legendary card appears you can only make animal sounds",

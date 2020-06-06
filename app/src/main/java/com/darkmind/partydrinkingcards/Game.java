@@ -116,7 +116,7 @@ public class Game extends Activity {
         sound_effects.add(R.raw.jeff);
         sound_effects.add(R.raw.ph_intro);
         sound_effects.add(R.raw.shut_up);
-        sound_effects.add(R.raw.turn_down_for_what);
+        sound_effects.add(R.raw.crab_rave);
         sound_effects.add(R.raw.nooooo);
         sound_effects.add(R.raw.cr7);
         sound_effects.add(R.raw.leeroy);
@@ -129,6 +129,11 @@ public class Game extends Activity {
         sound_effects.add(R.raw.pentakill);
         sound_effects.add(R.raw.avengers);
         sound_effects.add(R.raw.sasha);
+        sound_effects.add(R.raw.megalovania);
+        sound_effects.add(R.raw.hold_up);
+        sound_effects.add(R.raw.gigi);
+        sound_effects.add(R.raw.dance_till_dead);
+        sound_effects.add(R.raw.creeper);
     }
 
     private void playSoundEffect(){

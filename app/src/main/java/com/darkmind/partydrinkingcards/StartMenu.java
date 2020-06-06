@@ -73,9 +73,9 @@ public class StartMenu extends Activity{
 
         /* -------------Database---------------*/
 
-        TextView tv_options = findViewById(R.id.Tv_StartMenu);
-        Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/brokenwings.ttf");
-        tv_options.setTypeface(typeface);
+//        TextView tv_options = findViewById(R.id.Tv_StartMenu);
+//        Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/brokenwings.ttf");
+//        tv_options.setTypeface(typeface);
 
         DBHelper dbHelper = new DBHelper(this);
         int lang = dbHelper.getParameters().language;
