@@ -726,7 +726,7 @@ insert into cards (content,content_es,players,type)
 
   insert into cards (content,content_es,players,type)
      values ("Drink 1 sip if you have ever been kicked out a pub",
-     "Bebe 1 trago si te han echado de un bar",0,1);
+     "Bebe 1 trago si alguna vez te han echado de un bar",0,1);
 
   insert into cards (content,content_es,players,type)
    values ("The player that has the bigger beard drinks 1 sip",
@@ -737,8 +737,8 @@ insert into cards (content,content_es,players,type)
    "El jugador que tenga mas pelo en pecho bebe 1 trago",0,1);
 
     insert into cards (content,content_es,players,type)
-     values ("The player that has the more chest drinks 1 sip",
-     "El jugador que tenga mas pecho bebe 1 trago",0,1);
+     values ("The player that has the bigger head drinks 1 sip",
+     "El jugador que tenga la cabeza mas grande bebe 1 trago",0,1);
 
   insert into cards (content,content_es,players,type)
    values ("The player that has darker skin drinks 1 sip",
@@ -774,7 +774,7 @@ insert into cards (content,content_es,players,type)
 
   insert into cards (content,content_es,players,type)
    values ("Drink 1 sip if you have eaten today junk food",
-   "Bebe 1 trago has comido hoy comida basura",0,1);
+   "Bebe 1 trago si has comido hoy comida basura",0,1);
 
   insert into cards (content,content_es,players,type)
    values ("The player has more chest drinks 1 sip",
@@ -1023,7 +1023,7 @@ insert into cards (content,content_es,players,type)
 
   insert into cards (content,content_es,players,type)
            values ("Imitate a DJ doing the best bass drop in the world or drink 3 sips",
-           "Haz mimica de un DJ haciendo el bass drop mas legendarioo bebe 3 tragos",1,2);
+           "Haz mimica de un DJ haciendo el bass drop mas legendario bebe 3 tragos",1,2);
 
   insert into cards (content,content_es,players,type)
            values ("Pretend you are making out with yourself or drink 3 sips",
@@ -1040,7 +1040,7 @@ insert into cards (content,content_es,players,type)
 
   insert into cards (content,content_es,players,type)
            values ("Reenact a famous movie scene or drink 3 sips",
-           "Recrear una escena legendaria del cine o bebed 3 tragos",2,2);
+           "Recread una escena legendaria del cine o bebed 3 tragos",2,2);
 
   insert into cards (content,content_es,players,type)
          values ("The first player imitates how he thinks the second player flirts or drinks 3 sips",
@@ -1059,7 +1059,7 @@ insert into cards (content,content_es,players,type)
  /*-------- 0 players ------------*/;
  insert into cards (content,content_es,players,type)
   values ("Make pairs. Until a Legendary card appears everytime one of you drinks the chosen partner has to drink.",
-  "Haced parejas. Hasta que aparezca una carta Legendaria siempre que alguien beba bebe el compañero",0,3);
+  "Haced parejas. Hasta que aparezca una carta Legendaria siempre que alguien beba, bebe el compañero",0,3);
  /*-------- 1 player ------------*/;
  insert into cards (content,content_es,players,type)
   values ("Until a Legendary card appears you can say BRINDEMOS! and everyone will have to cheer and drink a sip",
@@ -1127,7 +1127,7 @@ insert into cards (content,content_es,players,type)
 
   insert into cards (content,content_es,players,type)
    values ("First player guesses the second players underwear color. If he is right the second player drinks 6 sips, if not he drink 6 sips instead.",
-   "EL primer jugador adivina el color del segundo jugador. Si acierta el segundo jugador bebe 6 tragos, si no el primero bebe 6 tragosº",2,3);
+   "EL primer jugador adivina el color de la ropa interior del segundo jugador. Si acierta el segundo jugador bebe 6 tragos, si no el primero bebe 6 tragosº",2,3);
  /*--------------------------------Legendarias-----------------------------------*/;
  /*-------- 0 players ------------*/;
  insert into cards (content,content_es,players,type)
@@ -1153,7 +1153,7 @@ insert into cards (content,content_es,players,type)
 
  insert into cards (content,content_es,players,type)
   values ("Challenge a player to see which one can drink his glass faster. Loser drinks a shot",
-  "Reta a un jugador a beberse el vaso mas rapido. EL perdedor toma un chupito.",1,4);
+  "Reta a un jugador a beberse el vaso mas rapido. El perdedor toma un chupito.",1,4);
 
  /*-------- 2 players ------------*/;
  insert into cards (content,content_es,players,type)
@@ -1162,7 +1162,7 @@ insert into cards (content,content_es,players,type)
 
   insert into cards (content,content_es,players,type)
    values ("Put an ice cube in your genitals. The first player to remove it drinks 1 shot. If you both hold it until it completely melts ALL the other players drink 1 shot. ",
-   "Meted un cubito de hielo en vuestros genitales. EL jugador que primero se lo quite bebe un chupito. Si los dos aguantais hasta que se derrita TODOS los demas jugadores beben un chupito.",2,4);
+   "Meted un cubito de hielo en vuestros genitales. El jugador que primero se lo quite bebe un chupito. Si los dos aguantais hasta que se derrita TODOS los demas jugadores beben un chupito.",2,4);
  /*-------- 3 players ------------*/;
 
   insert into cards (content,content_es,players,type)
