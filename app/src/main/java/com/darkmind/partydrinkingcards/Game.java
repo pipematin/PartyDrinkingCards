@@ -3,10 +3,8 @@ package com.darkmind.partydrinkingcards;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
 import android.graphics.Typeface;
-import android.graphics.drawable.LayerDrawable;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,13 +15,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class Game extends Activity {
 
@@ -37,12 +31,12 @@ public class Game extends Activity {
     private int card_count = 0;
     private boolean sound = false;
 
-    private int COMMON_PERCENT = 30;
-    private int RARE_PERCENT = 60;
-    private int EPIC_PERCENT = 85;
+    private int COMMON_PERCENT = 35;
+    private int RARE_PERCENT = 65;
+    private int EPIC_PERCENT = 90;
 
-    private ArrayList<Integer> sound_effects = new ArrayList<Integer>();
-
+    private ArrayList<Integer> sound_effects = new ArrayList<>();
+    private MediaPlayer mp = null;
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
@@ -53,7 +47,6 @@ public class Game extends Activity {
         if (dbHelper.getParameters().sound == 1){
             fill_sound_effects();
             this.sound = true;
-            System.out.println("SOUND OK");
         }
 
 
@@ -104,9 +97,38 @@ public class Game extends Activity {
         sound_effects.add(R.raw.fuck);
         sound_effects.add(R.raw.fuckers);
         sound_effects.add(R.raw.jhonny);
-        sound_effects.add(R.raw.jojo);
+        sound_effects.add(R.raw.to_be_continued);
         sound_effects.add(R.raw.why_are_you_running);
         sound_effects.add(R.raw.yeah_boy);
+        sound_effects.add(R.raw.swamp);
+        sound_effects.add(R.raw.deja_vu);
+        sound_effects.add(R.raw.credits);
+        sound_effects.add(R.raw.nani);
+        sound_effects.add(R.raw.coda);
+        sound_effects.add(R.raw.coffin);
+        sound_effects.add(R.raw.wow);
+        sound_effects.add(R.raw.bruh);
+        sound_effects.add(R.raw.come_here_boy);
+        sound_effects.add(R.raw.got_you_homie);
+        sound_effects.add(R.raw.ricardo);
+        sound_effects.add(R.raw.giorno_piano);
+        sound_effects.add(R.raw.sad_trombone);
+        sound_effects.add(R.raw.jeff);
+        sound_effects.add(R.raw.ph_intro);
+        sound_effects.add(R.raw.shut_up);
+        sound_effects.add(R.raw.turn_down_for_what);
+        sound_effects.add(R.raw.nooooo);
+        sound_effects.add(R.raw.cr7);
+        sound_effects.add(R.raw.leeroy);
+        sound_effects.add(R.raw.sad_violin);
+        sound_effects.add(R.raw.titanic);
+        sound_effects.add(R.raw.fortnite);
+        sound_effects.add(R.raw.flea);
+        sound_effects.add(R.raw.hahahahha);
+        sound_effects.add(R.raw.mariano);
+        sound_effects.add(R.raw.pentakill);
+        sound_effects.add(R.raw.avengers);
+        sound_effects.add(R.raw.sasha);
     }
 
     private void playSoundEffect(){
@@ -114,7 +136,7 @@ public class Game extends Activity {
         int sound = sound_effects.get(i);
         System.out.println("i: " + i + "\nID: "+ sound);
 
-        MediaPlayer mp = MediaPlayer.create(this, sound);
+        mp = MediaPlayer.create(this, sound);
         mp.setVolume(100,100);
         try{
             mp.start();
@@ -145,6 +167,10 @@ public class Game extends Activity {
         String type = getStringType(dataReturn.type,tv_type);
         tv_type.setText(type);
 
+
+        if( mp != null){
+            mp.stop();
+        }
         if(dataReturn.type == Card.LEGENDARY_INDEX && this.sound ){
             System.out.println("PLAYING SOUND");
             playSoundEffect();

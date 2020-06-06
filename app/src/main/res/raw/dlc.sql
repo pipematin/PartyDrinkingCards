@@ -724,6 +724,50 @@
    values ("The player that is more white drinks 1 sip",
    "El jugador que tenga la piel mas blanca bebe 1 trago",0,1);
 
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip if you like communism",
+   "Bebe 1 trago si te gusta el comunismo",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip if it is raining",
+   "Bebe 1 trago si esta lloviendo",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("The player that is not wearing underwear drinks 1 sip",
+   "El jugador que no lleve ropa interior bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("The player that has ever been arrested drinks 1 sip",
+   "El jugador que alguna vez haya sido detenido bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("The player that has its nails colored drinks 1 sip",
+   "El jugador que lleve las uñas pintadas bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip if have done exercise today",
+   "Bebe 1 trago si has hecho ejercicio hoy",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip if you have eaten today junk food",
+   "Bebe 1 trago has comido hoy comida basura",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("The player has more chest drinks 1 sip",
+   "El jugador que tenga mas tetas bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("The player that has more ass 1 sip",
+   "El jugador que tenga mas culo bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("The player that has ever wear a medical mask drinks 1 sip",
+   "El jugador que alguna vez haya llevado una mascarilla bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("The player that is in his/her month days drinks 1 sip",
+   "El jugador que este en esos dias del mes bebe 1 trago",0,1);
+
  /*-------- 1 player ------------*/;
 
  /*-------- 2 players ------------*/;
@@ -749,6 +793,11 @@
    "Bebe 1 trago por cada foto que hayas hecho hoy",0,2);
 
  /*-------- 1 player ------------*/;
+
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip for each traffic ticket you have ever gotten",
+   "Bebe un trago por cada multa de tráfico que te hayan puesto en la vida.",1,2);
+
  insert into cards (content,content_es,players,type)
   values ("Imagine that due to a radioactive accident you had a MEGA-ASS. What will be your superhero name and what will you do with that superpower?",
   "Imagina que debido a un accidente radiactivo tienes un MEGA-CULO. ¿Cual seria tu nombre de superheroe y para que usarias tu superpoder? ",1,2);
@@ -837,11 +886,48 @@ insert into cards (content,content_es,players,type)
          values ("Starting from the chosen player name FAMOUS BOOKS WRITTEN BY WRITERS FROM YOUR COUNTRY, the one who fails drinks 1 sip",
          "Empezando por el jugador elegido id nombrando LIBROS FAMOSOS ESCRITOS POR ESCRITORES FAMOSOS DE TU PAIS, el que falle bebe 1 trago",1,2);
 
+  insert into cards (content,content_es,players,type)
+         values ("Starting from the chosen player name ABSURD NAMES FOR A PET, the one who fails drinks 1 sip",
+         "Empezando por el jugador elegido id nombrando NOMBRES ABSURDOS PARA UNA MASCOTA, el que falle bebe 1 trago",1,2);
+
+  insert into cards (content,content_es,players,type)
+       values ("Imitate a famous youtuber. The player that guesses it right gifts 3 sips",
+       "Imita de un youtuber famoso. El jugador que lo adivine regala 3 tragos",1,2);
+
+  insert into cards (content,content_es,players,type)
+           values ("Imitate a DJ doing the best bass drop in the world or drink 3 sips",
+           "Haz mimica de un DJ haciendo el bass drop mas legendarioo bebe 3 tragos",1,2);
+
+  insert into cards (content,content_es,players,type)
+           values ("Pretend you are making out with yourself or drink 3 sips",
+           "Finje que te estas enrrollando contigo mismo o bebe 3 tragos",1,2);
 
  /*-------- 2 players ------------*/;
+  insert into cards (content,content_es,players,type)
+         values ("The player that spits less far drinks 3 sips",
+         "El jugador que escupa menos lejos bebe 3 tragos",2,2);
 
+  insert into cards (content,content_es,players,type)
+         values ("The first player imitates how he thinks the second player will be in 30 years or drinks 3 sips",
+         "El primer jugador imita como cree que sera el segundo jugador en 30 años o bebe 3 tragos",2,2);
+
+  insert into cards (content,content_es,players,type)
+           values ("Reenact a famous movie scene or drink 3 sips",
+           "Recrear una escena legendaria del cine o bebed 3 tragos",2,2);
+
+  insert into cards (content,content_es,players,type)
+         values ("The first player imitates how he thinks the second player flirts or drinks 3 sips",
+         "El primer jugador imita como cree que el segundo liga o bebe 3 tragos",2,2);
+
+  insert into cards (content,content_es,players,type)
+         values ("The first player imitates how he thinks the second player will die or drinks 3 sips",
+         "El primer jugador imita como cree que el segundo jugador morira o bebe 3 tragos",2,2);
  /*-------- 3 players ------------*/;
 
+ /*-------- 4 players ------------*/;
+   insert into cards (content,content_es,players,type)
+          values ("Do the coffin dance or drinks 3 sips",
+          "Haced el baile del meme del ataud o bebed 3 tragos",4,2);
  /*--------------------------------Epicas-----------------------------------*/;
  /*-------- 0 players ------------*/;
  insert into cards (content,content_es,players,type)
@@ -865,10 +951,28 @@ insert into cards (content,content_es,players,type)
    "Inventate la letra de una cancion de reggaeton o bebe 6 tragos",1,3);
 
   insert into cards (content,content_es,players,type)
-   values ("Tell the weirdest porn video you have seen. The one who is less weird drinks 6 sips",
-   "Contad el video porno mas raro que hayais visto. El menos raro bebe 6 tragos",2,3);
- /*-------- 2 players ------------*/;
+   values ("Moan or drink 5 sips",
+   "Gime o bebe 5 tragos",1,3);
 
+  insert into cards (content,content_es,players,type)
+   values ("Sing I will always love you or drink 5 sips",
+   "Canta I will always love you o bebe 5 tragos",1,3);
+
+  insert into cards (content,content_es,players,type)
+   values ("Do the worm dance or drink 5 sips",
+   "Haz el baile del gusano o bebe 5 tragos",1,3);
+
+  insert into cards (content,content_es,players,type)
+   values ("Until a legendary card appears you can force each minute a player to drink a sip",
+   "Hasta que aparezca una legendaria puedes forzar cada minuto a un jugador a beber un trago",1,3);
+ /*-------- 2 players ------------*/;
+   insert into cards (content,content_es,players,type)
+    values ("Tell the weirdest porn video you have seen. The one who is less weird drinks 6 sips",
+    "Contad el video porno mas raro que hayais visto. El menos raro bebe 6 tragos",2,3);
+
+  insert into cards (content,content_es,players,type)
+   values ("First player guesses the second players underwear color. If he is right the second player drinks 6 sips, if not he drink 6 sips instead.",
+   "EL primer jugador adivina el color del segundo jugador. Si acierta el segundo jugador bebe 6 tragos, si no el primero bebe 6 tragosº",2,3);
  /*--------------------------------Legendarias-----------------------------------*/;
  /*-------- 0 players ------------*/;
  insert into cards (content,content_es,players,type)
@@ -883,6 +987,10 @@ insert into cards (content,content_es,players,type)
  insert into cards (content,content_es,players,type)
   values ("Drink 1 shot if you have ever order something in Starbucks. Fucking Hipster",
   "Bebe 1 chupito si alguna vez has pedido algo en Starbucks. Puto Hipster.",1,4);
+
+ insert into cards (content,content_es,players,type)
+  values ("Challenge a player to see which one can drink his glass faster. Loser drinks a shot",
+  "Reta a un jugador a beberse el vaso mas rapido. EL perdedor toma un chupito.",1,4);
 
  /*-------- 2 players ------------*/;
  insert into cards (content,content_es,players,type)
