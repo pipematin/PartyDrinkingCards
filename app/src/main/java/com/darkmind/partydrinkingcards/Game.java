@@ -96,11 +96,9 @@ public class Game extends Activity {
         sound_effects.add(R.raw.cyka);
         sound_effects.add(R.raw.fuck);
         sound_effects.add(R.raw.fuckers);
-        sound_effects.add(R.raw.jhonny);
         sound_effects.add(R.raw.to_be_continued);
         sound_effects.add(R.raw.why_are_you_running);
         sound_effects.add(R.raw.yeah_boy);
-        sound_effects.add(R.raw.swamp);
         sound_effects.add(R.raw.deja_vu);
         sound_effects.add(R.raw.credits);
         sound_effects.add(R.raw.nani);
@@ -134,6 +132,11 @@ public class Game extends Activity {
         sound_effects.add(R.raw.gigi);
         sound_effects.add(R.raw.dance_till_dead);
         sound_effects.add(R.raw.creeper);
+        sound_effects.add(R.raw.thot);
+        sound_effects.add(R.raw.fuck_this_shit);
+        sound_effects.add(R.raw.sexy_sax);
+        sound_effects.add(R.raw.marcianito);
+        sound_effects.add(R.raw.dancin);
     }
 
     private void playSoundEffect(){
