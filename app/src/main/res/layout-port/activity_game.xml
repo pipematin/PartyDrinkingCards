@@ -7,7 +7,7 @@
         android:id="@+id/Img_Game"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bar_player_editor"
+        android:src="@drawable/traffic_1"
         android:scaleType="fitXY"/>
     
     <LinearLayout

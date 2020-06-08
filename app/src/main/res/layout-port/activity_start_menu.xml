@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/shots"/>
+        android:src="@drawable/color_shots_1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,11 +21,12 @@
         android:gravity="center|top">
 
         <ImageView
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="15sp"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/drinkingstone2_logo"/>
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15sp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/drinkingstone2_logo" />
 
         <Button
             android:layout_marginTop="50dp"

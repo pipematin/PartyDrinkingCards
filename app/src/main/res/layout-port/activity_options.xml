@@ -107,19 +107,29 @@
                 android:textAlignment="center" />
 
 
-            <Button
+            <ImageButton
                 android:id="@+id/RB_language_en"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="68dp"
+                android:scaleType="fitCenter"
                 android:onClick="onRBLanguageClicked"
-                android:text="@string/english" />
+                android:text="@string/english"
+                android:src="@drawable/english"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/RB_language_es"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="68dp"
+                android:scaleType="fitCenter"
                 android:onClick="onRBLanguageClicked"
-                android:text="@string/spanish" />
+                android:text="@string/spanish"
+                android:src="@drawable/spanish"/>
 
 
             <TextView
