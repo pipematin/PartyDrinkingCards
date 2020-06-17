@@ -78,14 +78,6 @@ public class StartMenu extends Activity{
 //        tv_options.setTypeface(typeface);
 
         DBHelper dbHelper = new DBHelper(this);
-        int lang = dbHelper.getParameters().language;
-        String disp_lang = getResources().getConfiguration().locale.getDisplayLanguage();
-        System.out.println(disp_lang);
-        if (lang == 1 && !("English".equals(disp_lang))){
-            setLocale("en");
-        }else if(lang == 2 && !("Spanish".equals(getResources().getConfiguration().locale.getDisplayLanguage()))){
-            setLocale("es");
-        }
 
         String totalCards = res.getString(R.string.totalCards,dbHelper.numberOfCards());
         TextView tv_cards = findViewById(R.id.numberCards);
@@ -98,13 +90,14 @@ public class StartMenu extends Activity{
         }
     }
 
-    public void setLocale(String lang) {
+    public void setLocale(String lang, int val, DBHelper dbHelper) {
         Locale myLocale = new Locale(lang);
         Resources res = getResources();
         DisplayMetrics dm = res.getDisplayMetrics();
         Configuration conf = res.getConfiguration();
         conf.locale = myLocale;
         res.updateConfiguration(conf, dm);
+        dbHelper.setParameter(7,val);
         Intent refresh = new Intent(this, StartMenu.class);
         finish();
         startActivity(refresh);
