@@ -98,15 +98,11 @@ public class Game extends Activity {
         sound_effects.add(R.raw.fuckers);
         sound_effects.add(R.raw.to_be_continued);
         sound_effects.add(R.raw.why_are_you_running);
-        sound_effects.add(R.raw.yeah_boy);
         sound_effects.add(R.raw.deja_vu);
         sound_effects.add(R.raw.credits);
-        sound_effects.add(R.raw.nani);
         sound_effects.add(R.raw.coda);
         sound_effects.add(R.raw.coffin);
         sound_effects.add(R.raw.wow);
-        sound_effects.add(R.raw.bruh);
-        sound_effects.add(R.raw.come_here_boy);
         sound_effects.add(R.raw.got_you_homie);
         sound_effects.add(R.raw.ricardo);
         sound_effects.add(R.raw.giorno_piano);
@@ -115,7 +111,6 @@ public class Game extends Activity {
         sound_effects.add(R.raw.ph_intro);
         sound_effects.add(R.raw.shut_up);
         sound_effects.add(R.raw.crab_rave);
-        sound_effects.add(R.raw.nooooo);
         sound_effects.add(R.raw.cr7);
         sound_effects.add(R.raw.leeroy);
         sound_effects.add(R.raw.sad_violin);
@@ -137,6 +132,22 @@ public class Game extends Activity {
         sound_effects.add(R.raw.sexy_sax);
         sound_effects.add(R.raw.marcianito);
         sound_effects.add(R.raw.dancin);
+        sound_effects.add(R.raw.pilar_men);
+        sound_effects.add(R.raw.shrekphone);
+        sound_effects.add(R.raw.jhon_cena);
+        sound_effects.add(R.raw.finish_him);
+        sound_effects.add(R.raw.money);
+        sound_effects.add(R.raw.ussr);
+        sound_effects.add(R.raw.illuminati);
+        sound_effects.add(R.raw.why_are_we);
+        sound_effects.add(R.raw.seinfield);
+        sound_effects.add(R.raw.overwatch);
+        sound_effects.add(R.raw.thug_life);
+        sound_effects.add(R.raw.pero_que);
+        sound_effects.add(R.raw.franco);
+        sound_effects.add(R.raw.cerebral);
+        sound_effects.add(R.raw.whatcha);
+        sound_effects.add(R.raw.nein);
     }
 
     private void playSoundEffect(){

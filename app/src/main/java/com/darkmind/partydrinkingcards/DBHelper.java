@@ -40,22 +40,22 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String PLAYERS_COLUMN_NAME = "name";
 
     /*EXTRA DATA INFO*/
-    private static final String EXTRA_TABLE_NAME = "extra";
-    private static final String EXTRA_COLUMN_ID = "id";
-    private static final String EXTRA_COLUMN_EXTRA1 = "extra1";
-    private static final String EXTRA_COLUMN_EXTRA1_E = "extra1_e";
-    private static final String EXTRA_COLUMN_EXTRA2 = "extra2";
-    private static final String EXTRA_COLUMN_EXTRA2_E = "extra2_e";
-    private static final String EXTRA_COLUMN_EXTRA3 = "extra3";
-    private static final String EXTRA_COLUMN_EXTRA3_E = "extra3_e";
-    private static final String EXTRA_COLUMN_EXTRA4 = "extra4";
-    private static final String EXTRA_COLUMN_EXTRA4_E = "extra4_e";
+//    private static final String EXTRA_TABLE_NAME = "extra";
+//    private static final String EXTRA_COLUMN_ID = "id";
+//    private static final String EXTRA_COLUMN_EXTRA1 = "extra1";
+//    private static final String EXTRA_COLUMN_EXTRA1_E = "extra1_e";
+//    private static final String EXTRA_COLUMN_EXTRA2 = "extra2";
+//    private static final String EXTRA_COLUMN_EXTRA2_E = "extra2_e";
+//    private static final String EXTRA_COLUMN_EXTRA3 = "extra3";
+//    private static final String EXTRA_COLUMN_EXTRA3_E = "extra3_e";
+//    private static final String EXTRA_COLUMN_EXTRA4 = "extra4";
+//    private static final String EXTRA_COLUMN_EXTRA4_E = "extra4_e";
 
 
     private Context context;
 
     public DBHelper(Context context) {
-        super(context, DATABASE_NAME , null,2);
+        super(context, DATABASE_NAME , null,4);
         this.context = context;
     }
 
@@ -89,21 +89,21 @@ public class DBHelper extends SQLiteOpenHelper {
                         PLAYERS_COLUMN_NAME + " text)"
         );
 
-        db.execSQL(
-                "CREATE TABLE IF NOT EXISTS " + EXTRA_TABLE_NAME +
-                        "(" + EXTRA_COLUMN_ID +" integer primary key," +
-                        EXTRA_COLUMN_EXTRA1 + " integer default 0," +
-                        EXTRA_COLUMN_EXTRA1_E + " integer default 0, " +
-                        EXTRA_COLUMN_EXTRA2 + " integer default 0," +
-                        EXTRA_COLUMN_EXTRA2_E + " integer default 0, " +
-                        EXTRA_COLUMN_EXTRA3 + " integer default 0," +
-                        EXTRA_COLUMN_EXTRA3_E + " integer default 0, " +
-                        EXTRA_COLUMN_EXTRA4 + " integer default 0," +
-                        EXTRA_COLUMN_EXTRA4_E + " integer default 0 " + ")"
-        );
+//        db.execSQL(
+//                "CREATE TABLE IF NOT EXISTS " + EXTRA_TABLE_NAME +
+//                        "(" + EXTRA_COLUMN_ID +" integer primary key," +
+//                        EXTRA_COLUMN_EXTRA1 + " integer default 0," +
+//                        EXTRA_COLUMN_EXTRA1_E + " integer default 0, " +
+//                        EXTRA_COLUMN_EXTRA2 + " integer default 0," +
+//                        EXTRA_COLUMN_EXTRA2_E + " integer default 0, " +
+//                        EXTRA_COLUMN_EXTRA3 + " integer default 0," +
+//                        EXTRA_COLUMN_EXTRA3_E + " integer default 0, " +
+//                        EXTRA_COLUMN_EXTRA4 + " integer default 0," +
+//                        EXTRA_COLUMN_EXTRA4_E + " integer default 0 " + ")"
+//        );
 
         insertParameterData(db);
-        insertExtra(db);
+//        insertExtra(db);
 
         insertDataFromFile(context, R.raw.insertdata, db);
         insertDataFromFile(context,R.raw.dlc,db);
@@ -115,57 +115,57 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + CARDS_TABLE_NAME);
         db.execSQL("DROP TABLE IF EXISTS " + PLAYERS_TABLE_NAME);
 
-        ExtraData extraData = saveExtraTable(db);
-        db.execSQL("DROP TABLE IF EXISTS " + EXTRA_TABLE_NAME);
+//        ExtraData extraData = saveExtraTable(db);
+//        db.execSQL("DROP TABLE IF EXISTS " + EXTRA_TABLE_NAME);
         onCreate(db);
-        loadExtraTable(db, extraData);
-        insertExtrasDatas(db);
+//        loadExtraTable(db, extraData);
+//        insertExtrasDatas(db);
     }
 
-    private class ExtraData{
-        private ArrayList<Integer> extras;
-        private ArrayList<Integer> setextras;
-
-        private ExtraData() {
-            extras = new ArrayList<>();
-            setextras = new ArrayList<>();
-        }
-
-        private void addExtras(int extra){
-            extras.add(extra);
-        }
-
-        private void addSetextras(int extra){
-            setextras.add(extra);
-        }
-    }
-
-    private ExtraData saveExtraTable(SQLiteDatabase db){
-        ExtraData extraData = new ExtraData();
-
-        for(int i = 1; i <= 4; i++){
-            extraData.addExtras(getExtra(false,i,db));
-            extraData.addSetextras(getExtra(true,i,db));
-        }
-
-        return extraData;
-    }
-
-    private void loadExtraTable(SQLiteDatabase db, ExtraData extraData){
-        for(int i = 0; i < extraData.extras.size(); i++){
-            if(extraData.extras.get(i) == 1){
-                dbsetExtra(i+1,false,extraData.extras.get(i),db);
-                dbsetExtra(i+1,true,extraData.setextras.get(i),db);
-            }
-        }
-    }
-
-    private void insertExtrasDatas(SQLiteDatabase db){
-        insertDataExtra(context,db,1);
-        insertDataExtra(context,db,2);
-        insertDataExtra(context,db,3);
-        insertDataExtra(context,db,4);
-    }
+//    private class ExtraData{
+//        private ArrayList<Integer> extras;
+//        private ArrayList<Integer> setextras;
+//
+//        private ExtraData() {
+//            extras = new ArrayList<>();
+//            setextras = new ArrayList<>();
+//        }
+//
+//        private void addExtras(int extra){
+//            extras.add(extra);
+//        }
+//
+//        private void addSetextras(int extra){
+//            setextras.add(extra);
+//        }
+//    }
+//
+//    private ExtraData saveExtraTable(SQLiteDatabase db){
+//        ExtraData extraData = new ExtraData();
+//
+//        for(int i = 1; i <= 4; i++){
+//            extraData.addExtras(getExtra(false,i,db));
+//            extraData.addSetextras(getExtra(true,i,db));
+//        }
+//
+//        return extraData;
+//    }
+//
+//    private void loadExtraTable(SQLiteDatabase db, ExtraData extraData){
+//        for(int i = 0; i < extraData.extras.size(); i++){
+//            if(extraData.extras.get(i) == 1){
+//                dbsetExtra(i+1,false,extraData.extras.get(i),db);
+//                dbsetExtra(i+1,true,extraData.setextras.get(i),db);
+//            }
+//        }
+//    }
+//
+//    private void insertExtrasDatas(SQLiteDatabase db){
+//        insertDataExtra(context,db,1);
+//        insertDataExtra(context,db,2);
+//        insertDataExtra(context,db,3);
+//        insertDataExtra(context,db,4);
+//    }
     /*---------------PARAMETERS------------*/
 
     public int numberOfParameters(){
@@ -386,209 +386,209 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
     /*-----------EXTRA---------------*/
-    private void insertDataExtra(Context context,SQLiteDatabase db,int index){
-        Cursor cursor = db.rawQuery("select * from "+EXTRA_TABLE_NAME,null);
-        cursor.moveToFirst();
-        switch (index){
-            case 1:
-                if(cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA1)) == 1
-                        && cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA1_E)) == 1){
-
-                    insertDataFromFile(context,R.raw.extra1,db);
-                }
-                break;
-            case 2:
-                if(cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA2)) == 1
-                        && cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA2_E)) == 1){
-                    insertDataFromFile(context,R.raw.extra2,db);
-                }
-                break;
-            case 3:
-                if(cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA3)) == 1
-                        && cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA3_E)) == 1){
-                    insertDataFromFile(context,R.raw.extra3,db);
-                }
-                break;
-            case 4:
-                if(cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA4)) == 1
-                        && cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA4_E)) == 1){
-                    insertDataFromFile(context,R.raw.extra4,db);
-                }
-                break;
-        }
-
-        cursor.close();
-    }
-
-    private void insertExtra(SQLiteDatabase db){
-        Cursor cursor = db.rawQuery("select * from " + EXTRA_TABLE_NAME, null);
-        if(cursor.getCount() == 0) {
-            ContentValues contentValues = new ContentValues();
-            contentValues.put(EXTRA_COLUMN_EXTRA1,0);
-            contentValues.put(EXTRA_COLUMN_EXTRA1_E,0);
-            contentValues.put(EXTRA_COLUMN_EXTRA2,0);
-            contentValues.put(EXTRA_COLUMN_EXTRA2_E,0);
-            contentValues.put(EXTRA_COLUMN_EXTRA3,0);
-            contentValues.put(EXTRA_COLUMN_EXTRA3_E,0);
-            contentValues.put(EXTRA_COLUMN_EXTRA4,0);
-            contentValues.put(EXTRA_COLUMN_EXTRA4_E,0);
-            db.insert(EXTRA_TABLE_NAME,null,contentValues);
-        }
-
-        cursor.close();
-
-    }
-
-    public void unlockExtra(int index){
-        SQLiteDatabase db = getWritableDatabase();
-
-        unlockExtra(index,db);
-    }
-
-    private void unlockExtra(int index, SQLiteDatabase db){
-        ContentValues contentValues = new ContentValues();
-        switch (index){
-            case 1:
-                contentValues.put(EXTRA_COLUMN_EXTRA1,1);
-                contentValues.put(EXTRA_COLUMN_EXTRA1_E,1);
-                break;
-            case 2:
-                contentValues.put(EXTRA_COLUMN_EXTRA2,1);
-                contentValues.put(EXTRA_COLUMN_EXTRA2_E,1);
-                break;
-            case 3:
-                contentValues.put(EXTRA_COLUMN_EXTRA3,1);
-                contentValues.put(EXTRA_COLUMN_EXTRA3_E,1);
-                break;
-            case 4:
-                contentValues.put(EXTRA_COLUMN_EXTRA4,1);
-                contentValues.put(EXTRA_COLUMN_EXTRA4_E,1);
-                break;
-        }
-        db.update(EXTRA_TABLE_NAME,contentValues,null,null);
-        insertDataExtra(context,db,index);
-    }
-
-    private void dbsetExtra(int index,boolean enabled,int value, SQLiteDatabase db){
-        ContentValues contentValues = new ContentValues();
-        switch (index){
-            case 1:
-                if(enabled){
-                    contentValues.put(EXTRA_COLUMN_EXTRA1_E,value);
-                }else{
-                    contentValues.put(EXTRA_COLUMN_EXTRA1,value);
-                }
-                break;
-            case 2:
-                if(enabled){
-                    contentValues.put(EXTRA_COLUMN_EXTRA2_E,value);
-                }else{
-                    contentValues.put(EXTRA_COLUMN_EXTRA2,value);
-                }
-                break;
-            case 3:
-                if(enabled){
-                    contentValues.put(EXTRA_COLUMN_EXTRA3_E,value);
-                }else{
-                    contentValues.put(EXTRA_COLUMN_EXTRA3,value);
-                }
-                break;
-            case 4:
-                if(enabled){
-                    contentValues.put(EXTRA_COLUMN_EXTRA4_E,value);
-                }else{
-                    contentValues.put(EXTRA_COLUMN_EXTRA4,value);
-                }
-                break;
-        }
-        db.update(EXTRA_TABLE_NAME,contentValues,null,null);
-    }
-
-    public void setExtra(int value, int index){
-        SQLiteDatabase db = getWritableDatabase();
-        setExtra(value,index,db);
-
-    }
-
-    private void setExtra(int value, int index, SQLiteDatabase db){
-        ContentValues contentValues = new ContentValues();
-        switch (index){
-            case 1:
-                contentValues.put(EXTRA_COLUMN_EXTRA1_E,value);
-                db.update(EXTRA_TABLE_NAME,contentValues,null,null);
-                if(value == 1) insertDataExtra(context,db,index);
-                else db.delete(CARDS_TABLE_NAME,CARDS_COLUMN_EXTRA + "= "+ 1,null);
-                break;
-            case 2:
-                contentValues.put(EXTRA_COLUMN_EXTRA2_E,value);
-                db.update(EXTRA_TABLE_NAME,contentValues,null,null);
-                if(value == 1) insertDataExtra(context,db,index);
-                else db.delete(CARDS_TABLE_NAME,CARDS_COLUMN_EXTRA + "= "+ 2,null);
-                break;
-            case 3:
-                contentValues.put(EXTRA_COLUMN_EXTRA3_E,value);
-                db.update(EXTRA_TABLE_NAME,contentValues,null,null);
-                if(value == 1) insertDataExtra(context,db,index);
-                else db.delete(CARDS_TABLE_NAME,CARDS_COLUMN_EXTRA + "= "+ 3,null);
-                break;
-            case 4:
-                contentValues.put(EXTRA_COLUMN_EXTRA4_E,value);
-                db.update(EXTRA_TABLE_NAME,contentValues,null,null);
-                if(value == 1) insertDataExtra(context,db,index);
-                else db.delete(CARDS_TABLE_NAME,CARDS_COLUMN_EXTRA + "= "+ 4,null);
-                break;
-        }
-    }
-
-    public void reverseExtra(){
-        SQLiteDatabase db = getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(EXTRA_COLUMN_EXTRA1,0);
-        contentValues.put(EXTRA_COLUMN_EXTRA1_E,0);
-        contentValues.put(EXTRA_COLUMN_EXTRA2,0);
-        contentValues.put(EXTRA_COLUMN_EXTRA2_E,0);
-        contentValues.put(EXTRA_COLUMN_EXTRA3,0);
-        contentValues.put(EXTRA_COLUMN_EXTRA3_E,0);
-        contentValues.put(EXTRA_COLUMN_EXTRA4,0);
-        contentValues.put(EXTRA_COLUMN_EXTRA4_E,0);
-        db.update(EXTRA_TABLE_NAME,contentValues,null,null);
-        db.delete(CARDS_TABLE_NAME,CARDS_COLUMN_EXTRA + ">= "+ 1,null);
-    }
-
-    public int getExtra(boolean e, int index){
-        SQLiteDatabase db = getReadableDatabase();
-
-        return getExtra(e,index,db);
-    }
-
-    private int getExtra(boolean e, int index, SQLiteDatabase db){
-        Cursor cursor;
-        int dato;
-
-        cursor = db.rawQuery("select * from "+ EXTRA_TABLE_NAME ,null);
-        cursor.moveToFirst();
-        switch (index){
-            case 1:
-                if(!e) dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA1));
-                else dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA1_E));
-                break;
-            case 2:
-                if(!e) dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA2));
-                else dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA2_E));
-                break;
-            case 3:
-                if(!e) dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA3));
-                else dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA3_E));
-                break;
-            case 4:
-                if(!e) dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA4));
-                else dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA4_E));
-                break;
-            default: dato = 0;
-        }
-        cursor.close();
-        return dato;
-    }
+//    private void insertDataExtra(Context context,SQLiteDatabase db,int index){
+//        Cursor cursor = db.rawQuery("select * from "+EXTRA_TABLE_NAME,null);
+//        cursor.moveToFirst();
+//        switch (index){
+//            case 1:
+//                if(cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA1)) == 1
+//                        && cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA1_E)) == 1){
+//
+//                    insertDataFromFile(context,R.raw.extra1,db);
+//                }
+//                break;
+//            case 2:
+//                if(cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA2)) == 1
+//                        && cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA2_E)) == 1){
+//                    insertDataFromFile(context,R.raw.extra2,db);
+//                }
+//                break;
+//            case 3:
+//                if(cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA3)) == 1
+//                        && cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA3_E)) == 1){
+//                    insertDataFromFile(context,R.raw.extra3,db);
+//                }
+//                break;
+//            case 4:
+//                if(cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA4)) == 1
+//                        && cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA4_E)) == 1){
+//                    insertDataFromFile(context,R.raw.extra4,db);
+//                }
+//                break;
+//        }
+//
+//        cursor.close();
+//    }
+//
+//    private void insertExtra(SQLiteDatabase db){
+//        Cursor cursor = db.rawQuery("select * from " + EXTRA_TABLE_NAME, null);
+//        if(cursor.getCount() == 0) {
+//            ContentValues contentValues = new ContentValues();
+//            contentValues.put(EXTRA_COLUMN_EXTRA1,0);
+//            contentValues.put(EXTRA_COLUMN_EXTRA1_E,0);
+//            contentValues.put(EXTRA_COLUMN_EXTRA2,0);
+//            contentValues.put(EXTRA_COLUMN_EXTRA2_E,0);
+//            contentValues.put(EXTRA_COLUMN_EXTRA3,0);
+//            contentValues.put(EXTRA_COLUMN_EXTRA3_E,0);
+//            contentValues.put(EXTRA_COLUMN_EXTRA4,0);
+//            contentValues.put(EXTRA_COLUMN_EXTRA4_E,0);
+//            db.insert(EXTRA_TABLE_NAME,null,contentValues);
+//        }
+//
+//        cursor.close();
+//
+//    }
+//
+//    public void unlockExtra(int index){
+//        SQLiteDatabase db = getWritableDatabase();
+//
+//        unlockExtra(index,db);
+//    }
+//
+//    private void unlockExtra(int index, SQLiteDatabase db){
+//        ContentValues contentValues = new ContentValues();
+//        switch (index){
+//            case 1:
+//                contentValues.put(EXTRA_COLUMN_EXTRA1,1);
+//                contentValues.put(EXTRA_COLUMN_EXTRA1_E,1);
+//                break;
+//            case 2:
+//                contentValues.put(EXTRA_COLUMN_EXTRA2,1);
+//                contentValues.put(EXTRA_COLUMN_EXTRA2_E,1);
+//                break;
+//            case 3:
+//                contentValues.put(EXTRA_COLUMN_EXTRA3,1);
+//                contentValues.put(EXTRA_COLUMN_EXTRA3_E,1);
+//                break;
+//            case 4:
+//                contentValues.put(EXTRA_COLUMN_EXTRA4,1);
+//                contentValues.put(EXTRA_COLUMN_EXTRA4_E,1);
+//                break;
+//        }
+//        db.update(EXTRA_TABLE_NAME,contentValues,null,null);
+//        insertDataExtra(context,db,index);
+//    }
+//
+//    private void dbsetExtra(int index,boolean enabled,int value, SQLiteDatabase db){
+//        ContentValues contentValues = new ContentValues();
+//        switch (index){
+//            case 1:
+//                if(enabled){
+//                    contentValues.put(EXTRA_COLUMN_EXTRA1_E,value);
+//                }else{
+//                    contentValues.put(EXTRA_COLUMN_EXTRA1,value);
+//                }
+//                break;
+//            case 2:
+//                if(enabled){
+//                    contentValues.put(EXTRA_COLUMN_EXTRA2_E,value);
+//                }else{
+//                    contentValues.put(EXTRA_COLUMN_EXTRA2,value);
+//                }
+//                break;
+//            case 3:
+//                if(enabled){
+//                    contentValues.put(EXTRA_COLUMN_EXTRA3_E,value);
+//                }else{
+//                    contentValues.put(EXTRA_COLUMN_EXTRA3,value);
+//                }
+//                break;
+//            case 4:
+//                if(enabled){
+//                    contentValues.put(EXTRA_COLUMN_EXTRA4_E,value);
+//                }else{
+//                    contentValues.put(EXTRA_COLUMN_EXTRA4,value);
+//                }
+//                break;
+//        }
+//        db.update(EXTRA_TABLE_NAME,contentValues,null,null);
+//    }
+//
+//    public void setExtra(int value, int index){
+//        SQLiteDatabase db = getWritableDatabase();
+//        setExtra(value,index,db);
+//
+//    }
+//
+//    private void setExtra(int value, int index, SQLiteDatabase db){
+//        ContentValues contentValues = new ContentValues();
+//        switch (index){
+//            case 1:
+//                contentValues.put(EXTRA_COLUMN_EXTRA1_E,value);
+//                db.update(EXTRA_TABLE_NAME,contentValues,null,null);
+//                if(value == 1) insertDataExtra(context,db,index);
+//                else db.delete(CARDS_TABLE_NAME,CARDS_COLUMN_EXTRA + "= "+ 1,null);
+//                break;
+//            case 2:
+//                contentValues.put(EXTRA_COLUMN_EXTRA2_E,value);
+//                db.update(EXTRA_TABLE_NAME,contentValues,null,null);
+//                if(value == 1) insertDataExtra(context,db,index);
+//                else db.delete(CARDS_TABLE_NAME,CARDS_COLUMN_EXTRA + "= "+ 2,null);
+//                break;
+//            case 3:
+//                contentValues.put(EXTRA_COLUMN_EXTRA3_E,value);
+//                db.update(EXTRA_TABLE_NAME,contentValues,null,null);
+//                if(value == 1) insertDataExtra(context,db,index);
+//                else db.delete(CARDS_TABLE_NAME,CARDS_COLUMN_EXTRA + "= "+ 3,null);
+//                break;
+//            case 4:
+//                contentValues.put(EXTRA_COLUMN_EXTRA4_E,value);
+//                db.update(EXTRA_TABLE_NAME,contentValues,null,null);
+//                if(value == 1) insertDataExtra(context,db,index);
+//                else db.delete(CARDS_TABLE_NAME,CARDS_COLUMN_EXTRA + "= "+ 4,null);
+//                break;
+//        }
+//    }
+//
+//    public void reverseExtra(){
+//        SQLiteDatabase db = getWritableDatabase();
+//        ContentValues contentValues = new ContentValues();
+//        contentValues.put(EXTRA_COLUMN_EXTRA1,0);
+//        contentValues.put(EXTRA_COLUMN_EXTRA1_E,0);
+//        contentValues.put(EXTRA_COLUMN_EXTRA2,0);
+//        contentValues.put(EXTRA_COLUMN_EXTRA2_E,0);
+//        contentValues.put(EXTRA_COLUMN_EXTRA3,0);
+//        contentValues.put(EXTRA_COLUMN_EXTRA3_E,0);
+//        contentValues.put(EXTRA_COLUMN_EXTRA4,0);
+//        contentValues.put(EXTRA_COLUMN_EXTRA4_E,0);
+//        db.update(EXTRA_TABLE_NAME,contentValues,null,null);
+//        db.delete(CARDS_TABLE_NAME,CARDS_COLUMN_EXTRA + ">= "+ 1,null);
+//    }
+//
+//    public int getExtra(boolean e, int index){
+//        SQLiteDatabase db = getReadableDatabase();
+//
+//        return getExtra(e,index,db);
+//    }
+//
+//    private int getExtra(boolean e, int index, SQLiteDatabase db){
+//        Cursor cursor;
+//        int dato;
+//
+//        cursor = db.rawQuery("select * from "+ EXTRA_TABLE_NAME ,null);
+//        cursor.moveToFirst();
+//        switch (index){
+//            case 1:
+//                if(!e) dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA1));
+//                else dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA1_E));
+//                break;
+//            case 2:
+//                if(!e) dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA2));
+//                else dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA2_E));
+//                break;
+//            case 3:
+//                if(!e) dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA3));
+//                else dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA3_E));
+//                break;
+//            case 4:
+//                if(!e) dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA4));
+//                else dato = cursor.getInt(cursor.getColumnIndex(EXTRA_COLUMN_EXTRA4_E));
+//                break;
+//            default: dato = 0;
+//        }
+//        cursor.close();
+//        return dato;
+//    }
 
     public static int getRandomNum(int min, int max){
             return min + (int)(Math.random() * ((max - min) + 1));

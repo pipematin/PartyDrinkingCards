@@ -56,7 +56,73 @@
   "Los jugadores que se enrrollarían con el familiar de alguien de la fiesta beben 1 trago",0,1);
 
  /*-------- 1 player ------------*/;
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like Trump",
+  "Bebe 1 trago si te gusta Trump",1,1);
 
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like Reggaeton",
+  "Bebe 1 trago si te gusta el Reggaeton",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like pineapple pizza",
+  "Bebe 1 trago si te gusta la pizza con piña",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like Feminism",
+  "Bebe 1 trago si te gusta el Feminismo",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like Cocaine",
+  "Bebe 1 trago si te gusta la Cocaina",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like dicks",
+  "Bebe 1 trago si te gustan las pollas",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you are wearing a Thong",
+  "Bebe 1 trago si llevas un tanga",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like Justin Bieber",
+  "Bebe 1 trago si te gusta Justin Bieber",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like Anime",
+  "Bebe 1 trago si te gusta el Anime",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like streamers",
+  "Bebe 1 trago si te gustan los streamers",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you have ever donated to a streamer or youtuber",
+  "Bebe 1 trago si alguna vez has donado a un streamer o youtuber",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like BDSM",
+  "Bebe 1 trago si te gusta el BDSM",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like Romantic Movies",
+  "Bebe 1 trago si te gustan las peliculas Romanticas",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like hunting",
+  "Bebe 1 trago si te gustan los toros",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you like Religion",
+  "Bebe 1 trago si te gusta la Religion",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you are Vegan",
+  "Bebe 1 trago si eres vegano",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you are pretty",
+  "Bebe 1 trago si eres guapo/a",1,1);
  /*-------- 2 players ------------*/;
 
  /*-------- 3 players ------------*/;
@@ -89,6 +155,14 @@
  insert into cards (content,content_es,players,type)
   values ("Drink 1 sip for each brother or sister you have",
   "Bebe 1 trago por cada hermano y hermana que tengas",1,2);
+
+ insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip for each person in the party you consider beautiful",
+   "Bebe 1 trago por cada persona de la fiesta que consideras que es guapa",1,2);
+
+ insert into cards (content,content_es,players,type)
+    values ("Drink 1 sip for each person in the party you consider inteligent",
+    "Bebe 1 trago por cada persona de la fiesta que consideras inteligente",1,2);
 
  insert into cards (content,content_es,players,type)
   values ("Drink 1 sip for each earring you have",
@@ -548,7 +622,13 @@
 
  /*--------------------------------Raras-----------------------------------*/;
  /*-------- 0 players ------------*/;
+insert into cards (content,content_es,players,type)
+  values ("The player with less drink in his glass gifts 3 sips",
+  "El jugador con menos bebida en su vaso regala tres tragos",1,2);
 
+insert into cards (content,content_es,players,type)
+  values ("The player that has drank more shots gifts 3 sips",
+  "El jugador que haya bebido mas chupitos regala tres tragos",1,2);
  /*-------- 1 player ------------*/;
 
  insert into cards (content,content_es,players,type)
@@ -566,6 +646,18 @@
  insert into cards (content,content_es,players,type)
   values ("Drink 1 sip for each other player younger than you",
   "Bebe 1 trago por cada otro jugador más joven que tú",1,2);
+
+ insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip for each other player with longer hair",
+   "Bebe 1 trago por cada otro jugador que tenga el pelo mas largo",1,2);
+
+ insert into cards (content,content_es,players,type)
+    values ("Drink 1 sip for each other player with more clothes than you",
+    "Bebe 1 trago por cada otro jugador que tenga mas ropa que tu",1,2);
+
+ insert into cards (content,content_es,players,type)
+     values ("Drink 2 sips if you are under a rule made by an epic card",
+     "Bebe 2 tragos si estas bajo la influencia de una regla de una carta epica",1,2);
 
  insert into cards (content,content_es,players,type)
   values ("Starting from the chosen player name ALCOHOLOLIC DRINKS BRANDS, the one who fails drinks 1 sip",
@@ -838,6 +930,10 @@ insert into cards (content,content_es,players,type)
    "Bebe un trago por cada persona que vive en tu casa.",1,2);
 
   insert into cards (content,content_es,players,type)
+     values ("Drink 2 sips if you have bought The Last of Us 2. You need them",
+     "Bebe 2 tragos si has comprado el Last of Us 2. Los necesitas.",1,2);
+
+  insert into cards (content,content_es,players,type)
    values ("Imitate a dog peeing or drink 3 sips",
    "Imita a un perro meando o bebe 3 tragos.",1,2);
 
@@ -1090,6 +1186,14 @@ insert into cards (content,content_es,players,type)
   "Hasta que aparezca una carta Legendaria puedes decir BRINDEMOS! y todos tienen que brindar y beber un trago",1,3);
 
  insert into cards (content,content_es,players,type)
+   values ("Dance like Shakira od drink 5 sips",
+   "Baila como Shakira o bebe 5 tragos",1,3);
+
+  insert into cards (content,content_es,players,type)
+    values ("Until a Legendary card appears you can only talk in past form. Drink 1 sip everytime you fail",
+    "Hasta que aparezca una carta Legendaria solo puedes hablar en pasado. Bebe 1 trago siempre que falles",1,3);
+
+ insert into cards (content,content_es,players,type)
    values ("Until a Legendary card appears talk like a famous celebrity of your choosing. Drink 1 sip everytime you fail",
    "Hasta que aparezca una carta Legendaria habla como una persona famosa de tu eleccion. Bebe 1 trago siempre que falles",1,3);
 
@@ -1112,6 +1216,10 @@ insert into cards (content,content_es,players,type)
 insert into cards (content,content_es,players,type)
   values ("Dance like Ricardo Milos or drink 5 sips",
   "Baila como Ricardo Milos o bebe 5 tragos",1,3);
+
+insert into cards (content,content_es,players,type)
+  values ("Sing an anime opening in japanese or drink 5 sips",
+  "Canta un opening de anime en japones o bebe 5 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
   values ("Until a Legendary card appears you can only make animal sounds",
@@ -1161,6 +1269,10 @@ insert into cards (content,content_es,players,type)
    values ("Do the worm dance or drink 5 sips",
    "Haz el baile del gusano o bebe 5 tragos",1,3);
 
+ insert into cards (content,content_es,players,type)
+    values ("Act like a soccer player getting hit or drink 5 sips",
+    "Imita cuando a un jugador de futbol le dan una patadita o bebe 5 tragos",1,3);
+
   insert into cards (content,content_es,players,type)
    values ("Until a legendary card appears you can force each minute a player to drink a sip",
    "Hasta que aparezca una legendaria puedes forzar cada minuto a un jugador a beber un trago",1,3);
@@ -1191,6 +1303,14 @@ insert into cards (content,content_es,players,type)
   "El último en apagar su movil bebe 1 chupito",0,4);
 
  insert into cards (content,content_es,players,type)
+  values ("The player that fails the next Rare Card challenge drinks 1 shot instead",
+  "El jugador que falle la siguiente prueba de una Carta Rara bebe 1 chupito en vez de un trago.",0,4);
+
+insert into cards (content,content_es,players,type)
+  values ("The player with more drink in his glass drinks 1 shot",
+  "El jugador con más bebida en el vaso bebe 1 chupito",0,4);
+
+ insert into cards (content,content_es,players,type)
   values ("Last one drinking a shot drinks another",
   "El último en beberse un chupito se bebe otro",0,4);
 
@@ -1205,6 +1325,10 @@ insert into cards (content,content_es,players,type)
   insert into cards (content,content_es,players,type)
    values ("The players who have the smallest coin decide which player in the party drinks a shot.",
    "Los jugadores que tengan la moneda mas pequeña deciden que jugador de la fiesta bebe un chupito",0,4);
+
+  insert into cards (content,content_es,players,type)
+     values ("If someone's last name starts with the word CAR drinks 1 shot.",
+     "Los coches son maravillosos! Si el apellido de algun jugador empieza por CAR bebe 7 chupitos. :)",0,4);
 
  /*-------- 1 player ------------*/;
  insert into cards (content,content_es,players,type)
@@ -1225,12 +1349,8 @@ insert into cards (content,content_es,players,type)
   "Haced un concurso de camiseta mojada o bebed un chupito",2,4);
 
  insert into cards (content,content_es,players,type)
-   values ("Both players write somewhere TRUST or BETRAY without anyone seeing. Then both answers are revealed at the same time. If both players choosed TRUST they drink 2 sips, if both BETRAY they drink 7 sips. If one TRUST and one BETRAY, BETRAY player doesn't drink anything and the other takes one shot.",
-   "Los dos jugadores escriben CONFIO o TRAICIONO en un papel sin que lo vea nadie. Luego revelan las respuestas a la vez. Si los dos jugadores decidieron CONFIO beben dos tragos. Si decidieron TRAICIONO beben 7 tragos. Si eligieron diferente, el que eligio TRAICIONO no bebe nada y el otro bebe 1 chupito",2,4);
-
- insert into cards (content,content_es,players,type)
-   values ("Both players write somewhere TRUST or BETRAY without anyone seeing. Then both answers are revealed at the same time. If both players choosed TRUST they drink 2 sips, if both BETRAY they drink 7 sips. If one TRUST and one BETRAY, BETRAY player doesn't drink anything and the other takes one shot.",
-   "Los dos jugadores escriben CONFIO o TRAICIONO en un papel sin que lo vea nadie. Luego revelan las respuestas a la vez. Si los dos jugadores decidieron CONFIO beben dos tragos. Si decidieron TRAICIONO beben 7 tragos. Si eligieron diferente, el que eligio TRAICIONO no bebe nada y el otro bebe 1 chupito",2,4);
+   values ("Do a First to Three game of rock paper scissors. The loser drinks 1 shot.",
+   "Haced una partida de al mejor de 5 de piedra papel y tijera. El perdedor bebe un chupito.",2,4);
 
  insert into cards (content,content_es,players,type)
    values ("Both players write somewhere TRUST or BETRAY without anyone seeing. Then both answers are revealed at the same time. If both players choosed TRUST they drink 2 sips, if both BETRAY they drink 7 sips. If one TRUST and one BETRAY, BETRAY player doesn't drink anything and the other takes one shot.",
