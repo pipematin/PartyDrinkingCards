@@ -12,6 +12,14 @@
   "Todo el que tenga un producto de Apple bebe 1 trago",0,1);
 
  insert into cards (content,content_es,players,type)
+   values ("The player/s that still play Hearthstone drinks 1 sip",
+   "Todo el que siga jugando a Hearthstone bebe 1 trago",0,1);
+
+ insert into cards (content,content_es,players,type)
+    values ("The player/s that cleans the ass of old people drinks 1 sip",
+    "Todo el que limpie el culo a viejos bebe 1 trago",0,1);
+
+ insert into cards (content,content_es,players,type)
   values ("The player/s that knows how to fry an egg drinks 1 sip",
   "Todo el que sepa freir un huevo bebe 1 trago",0,1);
 
@@ -232,12 +240,32 @@ insert into cards (content,content_es,players,type)
   "Hasta que aparezca una carta Legendaria el jugador seleccionado tiene que tartamudear siempre que diga una frase. Siempre que falle bebe 1 trago",1,3);
 
  insert into cards (content,content_es,players,type)
+   values ("Until a Legendary card appears chosen player has speak like a village person. Everytime he fails he drinks 1 sip",
+   "Hasta que aparezca una carta Legendaria el jugador seleccionado tiene que hablar como una persona de pueblo. Siempre que falle bebe 1 trago",1,3);
+
+insert into cards (content,content_es,players,type)
+  values ("Until a Legendary card appears chosen player has to speak like in medieval age. Everytime he fails he drinks 1 sip",
+  "Hasta que aparezca una carta Legendaria el jugador seleccionado tiene que hablar en castellano antiguo. Siempre que falle bebe 1 trago",1,3);
+
+insert into cards (content,content_es,players,type)
+  values ("Until a Legendary card appears chosen player has to speak and act as feminine as posible. Everytime he fails he drinks 1 sip",
+  "Hasta que aparezca una carta Legendaria el jugador seleccionado tiene que hablar y actuar lo mas femenino posible. Siempre que falle bebe 1 trago",1,3);
+
+insert into cards (content,content_es,players,type)
+  values ("Until a Legendary card appears chosen player has to speak and act as masculine as posible. Everytime he fails he drinks 1 sip",
+  "Hasta que aparezca una carta Legendaria el jugador seleccionado tiene que hablar y actuar lo mas masculino posible. Siempre que falle bebe 1 trago",1,3);
+
+ insert into cards (content,content_es,players,type)
   values ("Chosen player has to sing a song of his childhood or drink 4 sips",
   "El jugador elegido tiene que cantar una canción de su infancia o beber 4 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
   values ("Chosen player has to flirt with the player to his left or drink 4 sips",
   "El jugador elegido tiene que coquetear con el jugador de su izquierda o beber 4 tragos",1,3);
+
+  insert into cards (content,content_es,players,type)
+    values ("Chosen player has to sell the player to his left like it was a teleshopping product or drink 4 sips",
+    "El jugador elegido tiene que vender al jugador de su izquierda como si fuera un producto de teletienda o beber 4 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
   values ("Drink 1 sip for each pokemon game you have played",
@@ -248,6 +276,10 @@ insert into cards (content,content_es,players,type)
   "Bebe 1 trago por cada tarjeta en tu cartera",1,3);
 
  insert into cards (content,content_es,players,type)
+   values ("Drink 1 shot unless you beg all players to not drink it for 30 seconds non stop",
+   "Bebe 1 chupito a menos que te pases 30 segundos rogando sin parar que te lo perdonen",1,3);
+
+ insert into cards (content,content_es,players,type)
   values ("Drink 1 sip for each person that has talked to you today by whatssapp",
   "Bebe 1 trago por cada persona con lo que has hablado hoy por whatssapp",1,3);
 
@@ -255,6 +287,10 @@ insert into cards (content,content_es,players,type)
  insert into cards (content,content_es,players,type)
   values ("Chosen players do a dance battle. The loser drinks 4 sips",
   "Los jugadores elegidos hacen una pelea de baile. El perdedor bebe 4 tragos",2,3);
+
+ insert into cards (content,content_es,players,type)
+   values ("Chosen players have to act a scene from titanic or drink 4 sips",
+   "Los jugadores elegidos tienen que actuar una escena de titanic o beber 4 tragos",2,3);
 
  insert into cards (content,content_es,players,type)
   values ("Chosen players have to stay up just on one leg. The loser drinks 4 sips",
@@ -663,6 +699,18 @@ insert into cards (content,content_es,players,type)
   values ("Starting from the chosen player name ALCOHOLOLIC DRINKS BRANDS, the one who fails drinks 1 sip",
   "Empezando por el jugador elegido id nombrando MARCAS DE BEBIDAS ALCOHOLICAS, el que falle bebe 1 trago",1,2);
 
+   insert into cards (content,content_es,players,type)
+    values ("Starting from the chosen player name TRASH TV PROGRAMS, the one who fails drinks 1 sip",
+    "Empezando por el jugador elegido id nombrando PROGRAMAS DE TELEBASURA, el que falle bebe 1 trago",1,2);
+
+    insert into cards (content,content_es,players,type)
+     values ("Starting from the chosen player name ABSURD WAYS TO DIE, the one who fails drinks 1 sip",
+     "Empezando por el jugador elegido id nombrando MANERAS ABSURDAS DE MORIR, el que falle bebe 1 trago",1,2);
+
+ insert into cards (content,content_es,players,type)
+      values ("Starting from the chosen player name MOVIES WITH A BLACK PROTAGONIST, the one who fails drinks 1 sip",
+      "Empezando por el jugador elegido id nombrando PELICULAS CUYO PROTAGONISTA ES NEGRO, el que falle bebe 1 trago",1,2);
+
  insert into cards (content,content_es,players,type)
   values ("Starting from the chosen player name COUNTRIES THAT HAVE MATCHING BORDERS WITH RUSSIA, the one who fails drinks 1 sip",
   "Empezando por el jugador elegido id nombrando PAISES QUE TENGAN FRONTERA CON RUSIA, el que falle bebe 1 trago",1,2);
@@ -728,7 +776,7 @@ insert into cards (content,content_es,players,type)
   "Mira 3 posiciones de yoga e intenta hacerlas. Bebe 5 tragos si fallas",1,3);
 
  insert into cards (content,content_es,players,type)
-  values ("Turn off your phone until a Legendary card appears or dirnk 7 sips",
+  values ("Turn off your phone until a Legendary card appears or drink 7 sips",
   "Ten tu telefono apagado hasta que aparezca una carta Legendaria o bebe 7 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
@@ -1177,17 +1225,41 @@ insert into cards (content,content_es,players,type)
   values ("Make pairs. Until a Legendary card appears everytime one of you drinks the chosen partner has to drink.",
   "Haced parejas. Hasta que aparezca una carta Legendaria siempre que alguien beba, bebe el compañero",0,3);
 
+  insert into cards (content,content_es,players,type)
+    values ("Close your eyes. Then count to three and look to a player as soon as you open your eyes. if two players are looking at each other they drink 4 sips.",
+    "Cerrad los ojos. Contad hasta tres y nada mas abrirlos mirar a un jugador. Si dos jugadores se estan mirando beben 4 tragos.",0,3);
+
  insert into cards (content,content_es,players,type)
   values ("Do a round of I HAVE NEVER.",
   "Haced una ronda de YO NUNCA",0,3);
  /*-------- 1 player ------------*/;
+   insert into cards (content,content_es,players,type)
+       values ("Drink 4 sips if you have anime statues. If you have an anime pillow also drink 1 shot.",
+       "Bebe 4 tragos si tienes figuras de anime. Si tienes una almohada de anime bebe 1 chupito tambien.",1,3);
+
  insert into cards (content,content_es,players,type)
   values ("Until a Legendary card appears you can say BRINDEMOS! and everyone will have to cheer and drink a sip",
   "Hasta que aparezca una carta Legendaria puedes decir BRINDEMOS! y todos tienen que brindar y beber un trago",1,3);
 
  insert into cards (content,content_es,players,type)
-   values ("Dance like Shakira od drink 5 sips",
+   values ("Dance like Shakira or drink 5 sips",
    "Baila como Shakira o bebe 5 tragos",1,3);
+
+ insert into cards (content,content_es,players,type)
+    values ("Sing like an opera singer or drink 5 sips",
+    "Canta como un cantante de opera o bebe 5 tragos",1,3);
+
+ insert into cards (content,content_es,players,type)
+    values ("Invent a handshake that the player to your left and the player to your right have to memorize. When a legendary card appears they have to do it instantly or they drink 5 sips.",
+    "Inventate un choque de manos que el jugador de tu izquierda y el jugador de tu derecha tienen que memorizar. Cuando aparezca una legendaria lo tienen que hacer al momento o beber 5 tragos.",1,3);
+
+ insert into cards (content,content_es,players,type)
+     values ("Mimic that you are throwing salt from a salt shaker to your tongue for 10 seconds or drink 4 sips.",
+     "Haz mimica de que te estas echando sal desde un salero a la lengua durante 10 segundos o bebe 4 tragos.",1,3);
+
+ insert into cards (content,content_es,players,type)
+      values ("Send a whatssapp that says Murcia Capital Mundial with your phone reversed in less than 30 seconds or drink 4 sips.",
+      "Manda un whatssapp que diga Murcia Capital Mundial con tu telefono al reves en menos de 30 segundos o bebe 4 tragos.",1,3);
 
   insert into cards (content,content_es,players,type)
     values ("Until a Legendary card appears you can only talk in past form. Drink 1 sip everytime you fail",
@@ -1240,6 +1312,10 @@ insert into cards (content,content_es,players,type)
   insert into cards (content,content_es,players,type)
    values ("Moan or drink 5 sips",
    "Gime o bebe 5 tragos",1,3);
+
+  insert into cards (content,content_es,players,type)
+     values ("If you have drank water during the party drink 5 sips",
+     "Si has bebido agua durante la fiesta bebe 5 tragos",1,3);
 
   insert into cards (content,content_es,players,type)
    values ("Rub an ice cube on your nipples or drink 5 sips",
@@ -1347,6 +1423,10 @@ insert into cards (content,content_es,players,type)
  insert into cards (content,content_es,players,type)
   values ("Do a wet t-shirt competition or drink a shot",
   "Haced un concurso de camiseta mojada o bebed un chupito",2,4);
+
+ insert into cards (content,content_es,players,type)
+   values ("Both players have to try making other players laugh. First ont to make one player laugh is saved and the other player has to drink 1 shot.",
+   "Ambos jugadores tienen que intentar hacer reir a los demas. El primero en hacer reir a alguien se salva y el otro bebe un chupito.",2,4);
 
  insert into cards (content,content_es,players,type)
    values ("Do a First to Three game of rock paper scissors. The loser drinks 1 shot.",

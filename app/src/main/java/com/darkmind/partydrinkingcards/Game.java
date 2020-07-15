@@ -91,27 +91,18 @@ public class Game extends Activity {
 
     }
     private void fill_sound_effects(){
-        sound_effects.add(R.raw.blyamp3);
-        sound_effects.add(R.raw.bully);
         sound_effects.add(R.raw.cyka);
         sound_effects.add(R.raw.fuck);
-        sound_effects.add(R.raw.fuckers);
         sound_effects.add(R.raw.to_be_continued);
-        sound_effects.add(R.raw.why_are_you_running);
         sound_effects.add(R.raw.deja_vu);
         sound_effects.add(R.raw.credits);
         sound_effects.add(R.raw.coda);
         sound_effects.add(R.raw.coffin);
-        sound_effects.add(R.raw.wow);
-        sound_effects.add(R.raw.got_you_homie);
         sound_effects.add(R.raw.ricardo);
         sound_effects.add(R.raw.giorno_piano);
         sound_effects.add(R.raw.sad_trombone);
-        sound_effects.add(R.raw.jeff);
         sound_effects.add(R.raw.ph_intro);
-        sound_effects.add(R.raw.shut_up);
         sound_effects.add(R.raw.crab_rave);
-        sound_effects.add(R.raw.cr7);
         sound_effects.add(R.raw.leeroy);
         sound_effects.add(R.raw.sad_violin);
         sound_effects.add(R.raw.titanic);
@@ -126,7 +117,6 @@ public class Game extends Activity {
         sound_effects.add(R.raw.hold_up);
         sound_effects.add(R.raw.gigi);
         sound_effects.add(R.raw.dance_till_dead);
-        sound_effects.add(R.raw.creeper);
         sound_effects.add(R.raw.thot);
         sound_effects.add(R.raw.fuck_this_shit);
         sound_effects.add(R.raw.sexy_sax);
@@ -135,7 +125,6 @@ public class Game extends Activity {
         sound_effects.add(R.raw.pilar_men);
         sound_effects.add(R.raw.shrekphone);
         sound_effects.add(R.raw.jhon_cena);
-        sound_effects.add(R.raw.finish_him);
         sound_effects.add(R.raw.money);
         sound_effects.add(R.raw.ussr);
         sound_effects.add(R.raw.illuminati);
@@ -148,6 +137,10 @@ public class Game extends Activity {
         sound_effects.add(R.raw.cerebral);
         sound_effects.add(R.raw.whatcha);
         sound_effects.add(R.raw.nein);
+        sound_effects.add(R.raw.corona_jesus);
+        sound_effects.add(R.raw.fine);
+        sound_effects.add(R.raw.run);
+        sound_effects.add(R.raw.sista);
     }
 
     private void playSoundEffect(){
@@ -357,6 +350,10 @@ public class Game extends Activity {
 
     @Override
     protected void onPause() {
+        if(mp != null && mp.isPlaying()){
+            mp.stop();
+        }
+
         super.onPause();
     }
 

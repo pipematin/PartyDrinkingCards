@@ -55,7 +55,7 @@ public class DBHelper extends SQLiteOpenHelper {
     private Context context;
 
     public DBHelper(Context context) {
-        super(context, DATABASE_NAME , null,4);
+        super(context, DATABASE_NAME , null,7);
         this.context = context;
     }
 

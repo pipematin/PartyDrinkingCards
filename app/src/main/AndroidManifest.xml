@@ -28,8 +28,6 @@
         android:screenOrientation="portrait"/>
     <activity android:name=".StartMenu"
         android:screenOrientation="portrait"/>
-    <activity android:name=".Extra"
-        android:screenOrientation="portrait"/>
     <activity android:name=".StriderXRintro"
         android:screenOrientation="portrait"
         android:noHistory="true"/>
