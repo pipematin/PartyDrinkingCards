@@ -21,10 +21,12 @@
     <activity android:name=".Options"
         android:screenOrientation="portrait"/>
         <activity android:name=".Bonus"
+            android:noHistory="true"
             android:screenOrientation="portrait"/>
     <activity android:name=".PlayerEditor"
         android:screenOrientation="portrait"/>
     <activity android:name=".Game"
+        android:noHistory="true"
         android:screenOrientation="portrait"/>
     <activity android:name=".GameMenu"
         android:screenOrientation="portrait"/>
