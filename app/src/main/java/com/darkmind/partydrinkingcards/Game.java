@@ -30,7 +30,7 @@ public class Game extends Activity {
     public static final int GAME_TYPE_FAST = 2;
     private final int LEGENDARY_START = 7;
     private int card_count = 0;
-    private int vlad_appear_number = 29;
+    private int vlad_appear_number = 51;
     private boolean sound = false;
 
     private int COMMON_PERCENT = 35;
