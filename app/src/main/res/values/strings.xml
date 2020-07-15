@@ -61,4 +61,6 @@
     <string name="language">Language</string>
     <string name="english">English</string>
     <string name="spanish">Spanish</string>
+    <string name="cheeki_breeki">Cheeki Breeki!</string>
+    <string name="vlad_visit">Congratulations <b>%s</b>!\nYou have been visited by the Luck Vladimir. You will be inmune to the next shot you have to drink only if you dance like him. </string>
 </resources>

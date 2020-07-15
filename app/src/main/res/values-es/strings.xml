@@ -63,4 +63,7 @@
     <string name="language">Idioma</string>
     <string name="english">Ingles</string>
     <string name="spanish">Español</string>
+    <string name="cheeki_breeki">Cheeki Breeki!</string>
+    <string name="vlad_visit">Enhorabuena <b>%s</b>!\n\nHas sido visitado por el Vladimir de la suerte. Seras inmune al siguiente chupito que te toque beber solo si bailas como él.</string>
+
 </resources>

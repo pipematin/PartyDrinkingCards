@@ -267,6 +267,15 @@ public class DBHelper extends SQLiteOpenHelper {
         return db.delete(PLAYERS_TABLE_NAME,PLAYERS_COLUMN_NAME +" = ?", new String[] {player.getName()});
     }
 
+    public String getRandomPlayer(){
+        ArrayList<String> players = getPlayers();
+        int randomNum;
+        int numPlayers = players.size();
+
+        randomNum = getRandomNum(0,numPlayers-1);
+        return players.get(randomNum);
+    }
+
     private ArrayList<String> getRandomPlayers(int n){
         ArrayList<String> players = getPlayers();
         int randomNum;

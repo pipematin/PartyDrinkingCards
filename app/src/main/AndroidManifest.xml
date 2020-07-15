@@ -20,6 +20,8 @@
     </activity>
     <activity android:name=".Options"
         android:screenOrientation="portrait"/>
+        <activity android:name=".Bonus"
+            android:screenOrientation="portrait"/>
     <activity android:name=".PlayerEditor"
         android:screenOrientation="portrait"/>
     <activity android:name=".Game"

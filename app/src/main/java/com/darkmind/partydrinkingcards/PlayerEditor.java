@@ -78,7 +78,8 @@ public class PlayerEditor extends Activity {
 
     public void startGame(){
         Intent i = new Intent(this,Game.class);
-        i.putExtra(Game.GAME_TYPE,Game.GAME_TYPE_NORMAL);
+        i.putExtra(Game.GAME_TYPE,Game.GAME_TYPE_FAST);
+        i.putExtra(Game.GAME_STARTED, false);
         startActivity(i);
     }
 

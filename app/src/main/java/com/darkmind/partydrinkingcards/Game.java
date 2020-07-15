@@ -24,11 +24,13 @@ public class Game extends Activity {
     private TextView tv_players;
     private TextView tv_text;
     private TextView tv_type;
+    public static final String GAME_STARTED = "started";
     public static final String GAME_TYPE = "game";
     public static final int GAME_TYPE_NORMAL = 1;
     public static final int GAME_TYPE_FAST = 2;
     private final int LEGENDARY_START = 7;
     private int card_count = 0;
+    private int vlad_appear_number = 29;
     private boolean sound = false;
 
     private int COMMON_PERCENT = 35;
@@ -68,7 +70,10 @@ public class Game extends Activity {
                     }
                 }
 
-                nextCard();
+                if ( (card_count+1) % vlad_appear_number == 0)
+                    start_bonus();
+                else
+                    nextCard();
             }
         });
 
@@ -88,10 +93,18 @@ public class Game extends Activity {
         player_game.setTypeface(typeface);
         challenge_game.setTypeface(typeface);
 
-
+        Intent i = getIntent();
+        if (i.getBooleanExtra(GAME_STARTED, false))
+            nextCard();
     }
+
+    private void start_bonus(){
+        Intent i = new Intent(this, Bonus.class);
+        i.putExtra(Game.GAME_TYPE, i.getIntExtra(Game.GAME_TYPE, GAME_TYPE_FAST));
+        startActivity(i);
+    }
+
     private void fill_sound_effects(){
-        sound_effects.add(R.raw.cyka);
         sound_effects.add(R.raw.fuck);
         sound_effects.add(R.raw.to_be_continued);
         sound_effects.add(R.raw.deja_vu);
