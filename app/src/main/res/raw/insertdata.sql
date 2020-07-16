@@ -6,7 +6,7 @@ insert into cards (content,content_es,players,type)
 
 insert into cards (content,content_es,players,type)
  values ("The player/s that plays an instrument drinks 1 sip",
- "El que toque un instrumento bebe 1 trago",0,1);
+ "El que toque un instrumento bebe 1 trago. El que diga la palabra zambomba bebe 1 chupito por listo.",0,1);
 
 insert into cards (content,content_es,players,type)
  values ("The player/s wearing something red drinks 1 sip",

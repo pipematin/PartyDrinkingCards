@@ -81,6 +81,14 @@ insert into cards (content,content_es,players,type)
   "Bebe 1 trago si te gusta Trump",1,1);
 
 insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you have cried this week",
+  "Bebe 1 trago si has llorado esta semana",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you have bad breath",
+  "Bebe 1 trago si tienes mal aliento",1,1);
+
+insert into cards (content,content_es,players,type)
   values ("Drink 1 sip if you like Reggaeton",
   "Bebe 1 trago si te gusta el Reggaeton",1,1);
 
@@ -125,6 +133,10 @@ insert into cards (content,content_es,players,type)
   "Bebe 1 trago si te gusta el BDSM",1,1);
 
 insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you have ever stabbed somebody",
+  "Bebe 1 trago si alguna vez has dado un navajazo a aguien",1,1);
+
+insert into cards (content,content_es,players,type)
   values ("Drink 1 sip if you like Romantic Movies",
   "Bebe 1 trago si te gustan las peliculas Romanticas",1,1);
 
@@ -143,6 +155,10 @@ insert into cards (content,content_es,players,type)
 insert into cards (content,content_es,players,type)
   values ("Drink 1 sip if you are pretty",
   "Bebe 1 trago si eres guapo/a",1,1);
+
+insert into cards (content,content_es,players,type)
+  values ("Drink 1 sip if you are constipated",
+  "Bebe 1 trago si estas extreñido",1,1);
  /*-------- 2 players ------------*/;
 
  /*-------- 3 players ------------*/;
@@ -175,6 +191,10 @@ insert into cards (content,content_es,players,type)
  insert into cards (content,content_es,players,type)
   values ("Drink 1 sip for each brother or sister you have",
   "Bebe 1 trago por cada hermano y hermana que tengas",1,2);
+
+ insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip for each cousin you have",
+   "Bebe 1 trago por cada primo que tengas",1,2);
 
  insert into cards (content,content_es,players,type)
    values ("Drink 1 sip for each person in the party you consider beautiful",
@@ -840,6 +860,14 @@ insert into cards (content,content_es,players,type)
   "Baila la kalinka o bebe 4 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
+   values ("Sing a romantic song or drink 4 sips",
+   "Canta una cancion romantica o bebe 4 tragos",1,3);
+
+ insert into cards (content,content_es,players,type)
+    values ("Sing the fast part of the song RAP GOD or drink 4 sips",
+    "Canta la parte rapida de la cancion RAP GOD o bebe 4 tragos",1,3);
+
+ insert into cards (content,content_es,players,type)
   values ("Dance like a robot or drink 4 sips",
   "Baila como un robot o bebe 4 tragos",1,3);
 
@@ -857,6 +885,10 @@ insert into cards (content,content_es,players,type)
   values ("Dance like an african tribe or drink 4 sips",
   "Bailad como una tribu africana o bebed 4 tragos",3,3);
 
+ insert into cards (content,content_es,players,type)
+   values ("Dance K-Pop or drink 4 sips",
+   "Bailad K-Pop o bebed 4 tragos",3,3);
+
  /*--------------------------------Legendarias-----------------------------------*/;
  /*-------- 0 players ------------*/;
 
@@ -865,6 +897,10 @@ insert into cards (content,content_es,players,type)
  insert into cards (content,content_es,players,type)
   values ("Let the player to your left put you makeup or drink 1 shot",
   "Deja que el jugador de tu izquiera te maquille o bebe 1 chupito",1,4);
+
+ insert into cards (content,content_es,players,type)
+   values ("Put a one min alarm. Selected player starts with the MARK. For passing the MARK, the MARKED Player says another players name and drinks 1 sip. When the alarms rings MARKED player drinks 1 shot",
+   "Poned una alarma de un minuto. El jugador seleccionado empieza con la MARCA. Para pasar la MARCA a otro jugador, el jugador con la MARCA debe decir el nombre de otro jugador y beber un trago. Cuando suene la alarma el jugador con la MARCA bebe 1 chupito",1,4);
 
  insert into cards (content,content_es,players,type)
   values ("Show your internet history or drink 1 shot",
@@ -985,8 +1021,25 @@ insert into cards (content,content_es,players,type)
    "El jugador que tenga mas culo bebe 1 trago",0,1);
 
   insert into cards (content,content_es,players,type)
+     values ("The player that closes the fridge door with his ass drinks 1 sip",
+     "El jugador que cierre la puerta del frigorifico con el culo bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+       values ("The player that uses more his phone drinks 1 sip",
+       "El jugador que usa mas el movil bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+         values ("The player that uses spotify 1 sip",
+         "El jugador que usa spotify bebe 1 trago",0,1);
+
+
+  insert into cards (content,content_es,players,type)
    values ("The player that has ever wear a medical mask drinks 1 sip",
    "El jugador que alguna vez haya llevado una mascarilla bebe 1 trago",0,1);
+
+  insert into cards (content,content_es,players,type)
+   values ("The player that has ever gone fishing drinks 1 sip",
+   "El jugador que alguna vez haya ido a pescar bebe 1 trago",0,1);
 
   insert into cards (content,content_es,players,type)
    values ("The player that is in his/her month days drinks 1 sip",
@@ -1024,6 +1077,10 @@ insert into cards (content,content_es,players,type)
    values ("Drink 1 sip for each photograph you have taken today",
    "Bebe 1 trago por cada foto que hayas hecho hoy",0,2);
 
+ insert into cards (content,content_es,players,type)
+    values ("Last one that has taken a shit today gifts 2 sips",
+    "El ultimo que haya cagado hoy regala 2 tragos.",0,2);
+
  /*-------- 1 player ------------*/;
   insert into cards (content,content_es,players,type)
    values ("Drink 1 sip for each person that lives in your house",
@@ -1032,6 +1089,10 @@ insert into cards (content,content_es,players,type)
   insert into cards (content,content_es,players,type)
      values ("Drink 2 sips if you have bought The Last of Us 2. You need them",
      "Bebe 2 tragos si has comprado el Last of Us 2. Los necesitas.",1,2);
+
+  insert into cards (content,content_es,players,type)
+       values ("Drink 2 sips if you don't like vegetables.",
+       "Bebe 2 tragos si no te gustan las verduras.",1,2);
 
   insert into cards (content,content_es,players,type)
    values ("Imitate a dog peeing or drink 3 sips",
@@ -1081,9 +1142,7 @@ insert into cards (content,content_es,players,type)
    values ("Say one change you would make to your life if you could go back in time or drink 2 sips",
    "Di un cambio que harías en tu vida si pudieras ir atras en el tiempo o bebe 2 tragos.",1,2);
 
-insert into cards (content,content_es,players,type)
-   values ("Last one that has taken a shit today gifts 2 sips",
-   "El ultimo que haya cagado hoy regala 2 tragos.",1,2);
+
 
 insert into cards (content,content_es,players,type)
    values ("Do a Fortnite dance or drink 2 sips",
@@ -1114,8 +1173,12 @@ insert into cards (content,content_es,players,type)
   "Empezando por el jugador elegido nombrar, empezad en el numero 1 e ir multiplicando por 2, el que falle bebe 1 trago",1,2);
 
 insert into cards (content,content_es,players,type)
- values ("Starting from the chosen player name PRESIDENTS OF YOUR COUNTRY, the one who fails drinks 1 sip",
- "Empezando por el jugador elegido nombrar PRESIDENTES DE TU PAIS, el que falle bebe 1 trago",1,2);
+ values ("Starting from the chosen player name PRESIDENTS THAT HAVE RULED YOUR COUNTRY, the one who fails drinks 1 sip",
+ "Empezando por el jugador elegido nombrar PRESIDENTES QUE HAN GOBERNADO TU PAIS, el que falle bebe 1 trago",1,2);
+
+ insert into cards (content,content_es,players,type)
+  values ("Starting from the chosen player name MOUNTAIN NAMES FROM YOUR COUNTRY, the one who fails drinks 1 sip",
+  "Empezando por el jugador elegido nombrar NOMBRES DE MONTAÑAS DE TU PAIS, el que falle bebe 1 trago",1,2);
 
 insert into cards (content,content_es,players,type)
  values ("Starting from the chosen player name MOVIES STARRED BY DI CAPRIO, the one who fails drinks 1 sip",
@@ -1483,6 +1546,10 @@ insert into cards (content,content_es,players,type)
  insert into cards (content,content_es,players,type)
   values ("Do a wet t-shirt competition or drink a shot",
   "Haced un concurso de camiseta mojada o bebed un chupito",2,4);
+
+ insert into cards (content,content_es,players,type)
+   values ("Starting from first player, pass each other an ice cube at a distance of 2 meters. The one that fails catching it drinks 1 shot.",
+   "Empezando por el primer jugador pasaros un cubito de hielo a una distancia de 2 metros. El que falle al cogerlo bebe 1 chupito.",2,4);
 
  insert into cards (content,content_es,players,type)
    values ("Both players have to try making other players laugh. First ont to make one player laugh is saved and the other player has to drink 1 shot.",
