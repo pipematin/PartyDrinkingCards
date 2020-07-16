@@ -24,6 +24,18 @@
   "Todo el que sepa freir un huevo bebe 1 trago",0,1);
 
  insert into cards (content,content_es,players,type)
+   values ("The player/s that has ride a horse drinks 1 sip",
+   "Todo el que haya montado a caballo bebe 1 trago",0,1);
+
+ insert into cards (content,content_es,players,type)
+   values ("The player/s that has jumped from a plane drinks 1 sip",
+   "Todo el que haya saltado de un avion bebe 1 trago",0,1);
+
+ insert into cards (content,content_es,players,type)
+    values ("The player/s that has shot a real gun drinks 1 sip",
+    "Todo el que disparado un arma de verdad bebe 1 trago",0,1);
+
+ insert into cards (content,content_es,players,type)
   values ("The player/s that uses glasses drinks 1 sip",
   "Todo el que use gafas bebe 1 trago",0,1);
 
@@ -231,8 +243,12 @@ insert into cards (content,content_es,players,type)
   values ("Until a Legendary card appears chosen player has to rhyme every phrase he says. Everytime he fails he drinks 1 sip",
   "Hasta que aparezca una carta Legendaria el jugador seleccionado tiene que rimar siempre que diga una frase. Siempre que falle bebe 1 trago",1,3);
 
+  insert into cards (content,content_es,players,type)
+   values ("Until a Legendary card appears chosen player has to act like an anime schoolgirl. Everytime he fails he drinks 1 sip",
+   "Hasta que aparezca una carta Legendaria el jugador seleccionado tiene que actuar como una colegiala de anime. Siempre que falle bebe 1 trago",1,3);
+
  insert into cards (content,content_es,players,type)
-  values ("Until a Legendary card appears chosen player has to keep one eye closed. Everytime he fails he drinks 1 sip",
+  values ("Until a Legendary card appears chosen player has to keep one eye closed. Every time he fails he drinks 1 sip",
   "Hasta que aparezca una carta Legendaria el jugador seleccionado tiene que mantener un ojo cerrado. Siempre que falle bebe 1 trago",1,3);
 
  insert into cards (content,content_es,players,type)
@@ -258,6 +274,10 @@ insert into cards (content,content_es,players,type)
  insert into cards (content,content_es,players,type)
   values ("Chosen player has to sing a song of his childhood or drink 4 sips",
   "El jugador elegido tiene que cantar una canción de su infancia o beber 4 tragos",1,3);
+
+  insert into cards (content,content_es,players,type)
+    values ("Chosen player has to play a solo of air guitar or drink 4 sips",
+    "El jugador elegido tiene que tocar un solo de una guitarra imaginaria o beber 4 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
   values ("Chosen player has to flirt with the player to his left or drink 4 sips",
@@ -379,6 +399,10 @@ insert into cards (content,content_es,players,type)
   values ("Mimic a FAMOUS VINE or drink 5 sips",
   "Replica un VINE FAMOSO o bebe 5 tragos",1,3);
 
+  insert into cards (content,content_es,players,type)
+   values ("Drink one sip for each series episode you have seen this week",
+   "Bebe un trago por cada capitulo de series que hayas visto esta semana",1,3);
+
  insert into cards (content,content_es,players,type)
   values ("Tell your most embarrasing anecdote or drink 5 sips",
   "Cuenta tu anecdota más vergonzosa o bebe 5 tragos",1,3);
@@ -436,8 +460,8 @@ insert into cards (content,content_es,players,type)
   "Comete un moco o bebe 1 chupito",1,4);
 
  insert into cards (content,content_es,players,type)
-  values ("Let other player to use your twitter for 1 minute or drink 1 shot",
-  "Deja a otro jugador que use tu twitter durante 1 minuto o bebe 1 chupito",1,4);
+  values ("Let other player to use your instagram for 1 minute or drink 1 shot",
+  "Deja a otro jugador que use tu instagram durante 1 minuto o bebe 1 chupito",1,4);
 
  insert into cards (content,content_es,players,type)
   values ("Last one that has puked gives 1 shot",
@@ -448,7 +472,7 @@ insert into cards (content,content_es,players,type)
   "Canta a todo volumen CUMPLEAÑOS FELIZ en la calle o bebe 1 chupito",1,4);
 
  insert into cards (content,content_es,players,type)
-  values ("Drink a sip and inmediatly spit it in your glass. Then drink another sip",
+  values ("Drink a sip and immediately spit it in your glass. Then drink another sip",
   "Bebe un trago e inmediatamente escupelo en el vaso. Luego bebe otro trago",1,4);
 
  insert into cards (content,content_es,players,type)
@@ -513,24 +537,24 @@ insert into cards (content,content_es,players,type)
   "Cuenta uno de tus fetiches sexuales o bebe 3 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
-  values ("Show your ass for 5 seconds or drink 3 sips",
-  "Muestra el culo durante 5 segundos o bebe 3 tragos",1,3);
+  values ("Show your ass for 5 seconds or drink 5 sips",
+  "Muestra el culo durante 5 segundos o bebe 5 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
-  values ("Simulate a blowjob for 5 seconds or drink 3 sips",
-  "Simula una mamada durante 5 segundos o bebe 3 tragos",1,3);
+  values ("Simulate a blowjob for 5 seconds or drink 8 sips",
+  "Simula una mamada durante 5 segundos o bebe 8 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
   values ("Dance as sexy as you can or drink 3 sips",
   "Baila tan sexy como puedas o bebe 3 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
-  values ("Put an ice cube in you nipple or drink 3 sips",
-  "Ponte un cubito de hielo en el pezon o bebe 3 tragos",1,3);
+  values ("Put an ice cube in you nipple or drink 5 sips",
+  "Ponte un cubito de hielo en el pezon o bebe 5 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
-  values ("Tell one of your sex-fantasies or drink 3 sips",
-  "Cuenta una de tus fantasias sexuales o bebe 3 tragos",1,3);
+  values ("Tell one of your sex-fantasies or drink 5 sips",
+  "Cuenta una de tus fantasias sexuales o bebe 5 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
   values ("Tell an erotic fantasy involving you and other player or drink 5 sips",
@@ -538,17 +562,17 @@ insert into cards (content,content_es,players,type)
 
  /*-------- 2 players ------------*/;
  insert into cards (content,content_es,players,type)
-  values ("First player has to whisper erotic things to the second player or drink 3 sips",
-  "El primer jugador tiene que susurrar cosas eróticas al segundo o beber 3 tragos",2,3);
+  values ("First player has to whisper erotic things to the second player or drink 5 sips",
+  "El primer jugador tiene que susurrar cosas eróticas al segundo o beber 5 tragos",2,3);
 
  insert into cards (content,content_es,players,type)
-  values ("First player has to give a massage to the second player or drink 4 sips",
-  "El primer jugador tiene que hacer un masaje al segundo o beber 4 tragos",2,3);
+  values ("First player has to give a massage to the second player or drink 5 sips",
+  "El primer jugador tiene que hacer un masaje al segundo o beber 5 tragos",2,3);
 
  /*-------- 3 players ------------*/;
  insert into cards (content,content_es,players,type)
-  values ("Pass an ice cube from mouth to mouth 2 times or drink 3 sips",
-  "Pasaros un cubito de hielo de boca a boca 2 veces o bebed 3 tragos",3,3);
+  values ("Pass an ice cube from mouth to mouth 2 times or drink 4 sips",
+  "Pasaros un cubito de hielo de boca a boca 2 veces o bebed 4 tragos",3,3);
 
  /*--------------------------------Legendarias-----------------------------------*/;
  /*-------- 0 players ------------*/;
@@ -631,6 +655,10 @@ insert into cards (content,content_es,players,type)
   "El que no haya bebido un chupito hoy bebe 1 trago",0,1);
 
  insert into cards (content,content_es,players,type)
+   values ("The player/s that think he is autistic drinks 1 sip",
+   "El que crea que tiene autismo bebe 1 trago",0,1);
+
+ insert into cards (content,content_es,players,type)
   values ("The player/s that hasn't eaten in Taco Bell this week drinks 1 sip",
   "El que no haya comido en Taco Bell esta semana bebe 1 trago",0,1);
 
@@ -651,6 +679,30 @@ insert into cards (content,content_es,players,type)
   "El/los jugadores que nuncan se vayan a casar beben 1 trago",0,1);
 
  /*-------- 1 player ------------*/;
+
+  insert into cards (content,content_es,players,type)
+   values ("Drink 1 sip if you sleep naked",
+   "Bebe 1 trago si duermes desnudo",1,1);
+
+  insert into cards (content,content_es,players,type)
+     values ("Drink 1 sip if you have eaten some sweets today",
+     "Bebe 1 trago si has comido un bollo hoy",1,1);
+
+  insert into cards (content,content_es,players,type)
+     values ("Drink 1 sip if you have gonorrhea",
+     "Bebe 1 trago si tienes gonorrea",1,1);
+
+  insert into cards (content,content_es,players,type)
+     values ("Drink 1 sip if you have ever been to a classical music concert",
+     "Bebe 1 trago si alguna vez has ido a un concierto de musica clasica",1,1);
+
+  insert into cards (content,content_es,players,type)
+       values ("Drink 1 sip if you have ever received a rectal examination",
+       "Bebe 1 trago si alguna vez has recibido un tacto rectal",1,1);
+
+  insert into cards (content,content_es,players,type)
+         values ("Drink 1 sip if you have ever cross-dressed",
+         "Bebe 1 trago si alguna vez te has travestido",1,1);
 
  /*-------- 2 players ------------*/;
 
@@ -1154,6 +1206,10 @@ insert into cards (content,content_es,players,type)
          "Empezando por el jugador elegido id nombrando TRABAJOS QUE TU MADRE ODIAIRIA QUE HICIERAS, el que falle bebe 1 trago",1,2);
 
   insert into cards (content,content_es,players,type)
+           values ("Starting from the chosen player name DIFFERENT WAYS OF SAYING YOU ARE GOING TO TAKE A SHIT, the one who fails drinks 1 sip",
+           "Empezando por el jugador elegido id nombrando MANERAS DIFERENTES DE DECIR QUE VAS A CAGAR, el que falle bebe 1 trago",1,2);
+
+  insert into cards (content,content_es,players,type)
          values ("Starting from the chosen player name THE DICCIONARY BACKWARDS, the one who fails drinks 1 sip",
          "Empezando por el jugador elegido id nombrando EL DICCIONARIO AL REVES, el que falle bebe 1 trago",1,2);
 
@@ -1246,8 +1302,8 @@ insert into cards (content,content_es,players,type)
    "Baila como Shakira o bebe 5 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
-    values ("Sing like an opera singer or drink 5 sips",
-    "Canta como un cantante de opera o bebe 5 tragos",1,3);
+    values ("Sing like an opera singer or drink 4 sips",
+    "Canta como un cantante de opera o bebe 4 tragos",1,3);
 
  insert into cards (content,content_es,players,type)
     values ("Invent a handshake that the player to your left and the player to your right have to memorize. When a legendary card appears they have to do it instantly or they drink 5 sips.",
@@ -1412,6 +1468,10 @@ insert into cards (content,content_es,players,type)
   "Bebe 1 chupito si alguna vez has pedido algo en Starbucks. Puto Hipster.",1,4);
 
  insert into cards (content,content_es,players,type)
+   values ("Insult a player and drink a long sip. Repeat it for each player in the party.",
+   "Insulta a un jugador y bebe un trago largo. Repite esto para cada jugador de la fiesta.",1,4);
+
+ insert into cards (content,content_es,players,type)
   values ("Choose now what the next shot will be containing",
   "Decide ahora lo que contendra el proximo chupito.",1,4);
 
@@ -1437,7 +1497,7 @@ insert into cards (content,content_es,players,type)
    "Los dos jugadores escriben CONFIO o TRAICIONO en un papel sin que lo vea nadie. Luego revelan las respuestas a la vez. Si los dos jugadores decidieron CONFIO beben dos tragos. Si decidieron TRAICIONO beben 7 tragos. Si eligieron diferente, el que eligio TRAICIONO no bebe nada y el otro bebe 1 chupito",2,4);
 
   insert into cards (content,content_es,players,type)
-   values ("Put an ice cube in your genitals. The first player to remove it drinks 1 shot. If you both hold it until it completely melts ALL the other players drink 1 shot. ",
+   values ("Put an ice cube in your genitals. The first player to remove it drinks 1 shot. If you both hold it for a minute ALL the other players drink 1 shot. ",
    "Meted un cubito de hielo en vuestros genitales. El jugador que primero se lo quite bebe un chupito. Si los dos aguantais hasta que se derrita TODOS los demas jugadores beben un chupito.",2,4);
  /*-------- 3 players ------------*/;
 
